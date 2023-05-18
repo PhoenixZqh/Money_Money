@@ -1,0 +1,8 @@
+prefix=/home/zqh/PhoenixZ/Money_Cuda_TensorRT/learning_ws/install
+
+Name: tensorrtStudy
+Description: Description of tensorrtStudy
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,4 @@
+/media/zqh/planB/Phoenix_Z/Learning/Qt/build-02Signal_and_Slot-Desktop_Qt_5_12_9_GCC_64bit-Debug/CMakeFiles/rebuild_cache.dir
+/media/zqh/planB/Phoenix_Z/Learning/Qt/build-02Signal_and_Slot-Desktop_Qt_5_12_9_GCC_64bit-Debug/CMakeFiles/edit_cache.dir
+/media/zqh/planB/Phoenix_Z/Learning/Qt/build-02Signal_and_Slot-Desktop_Qt_5_12_9_GCC_64bit-Debug/CMakeFiles/02Signal_and_Slot.dir
+/media/zqh/planB/Phoenix_Z/Learning/Qt/build-02Signal_and_Slot-Desktop_Qt_5_12_9_GCC_64bit-Debug/CMakeFiles/02Signal_and_Slot_autogen.dir

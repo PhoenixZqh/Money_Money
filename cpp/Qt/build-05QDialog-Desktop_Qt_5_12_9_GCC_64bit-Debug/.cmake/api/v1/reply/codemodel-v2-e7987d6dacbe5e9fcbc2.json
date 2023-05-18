@@ -1,0 +1,68 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "05QDialog",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "05QDialog::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-05QDialog-Debug-8d77a379e5972b904683.json",
+					"name" : "05QDialog",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "05QDialog_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-05QDialog_autogen-Debug-81347d9fe0b48e8340b7.json",
+					"name" : "05QDialog_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/media/zqh/planB/Phoenix_Z/Learning/Qt/build-05QDialog-Desktop_Qt_5_12_9_GCC_64bit-Debug",
+		"source" : "/media/zqh/planB/Phoenix_Z/Learning/Qt/05QDialog"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

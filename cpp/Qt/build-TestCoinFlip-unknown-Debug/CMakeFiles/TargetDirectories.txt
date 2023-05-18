@@ -1,0 +1,4 @@
+/media/zqh/planB/Phoenix_Z/Learning/Qt/build-TestCoinFlip-unknown-Debug/CMakeFiles/rebuild_cache.dir
+/media/zqh/planB/Phoenix_Z/Learning/Qt/build-TestCoinFlip-unknown-Debug/CMakeFiles/edit_cache.dir
+/media/zqh/planB/Phoenix_Z/Learning/Qt/build-TestCoinFlip-unknown-Debug/CMakeFiles/TestCoinFlip.dir
+/media/zqh/planB/Phoenix_Z/Learning/Qt/build-TestCoinFlip-unknown-Debug/CMakeFiles/TestCoinFlip_autogen.dir

@@ -1,0 +1,2 @@
+ros_learn
+-DCATKIN_DEVEL_PREFIX=/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/install -G Unix Makefiles
