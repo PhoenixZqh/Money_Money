@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/devel/include/ros_learn/add.h
+/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel/include/ros_learn/add.h
 ros/service_traits.h
 -
 ros_learn/addRequest.h
@@ -14,7 +14,7 @@ ros_learn/addRequest.h
 ros_learn/addResponse.h
 -
 
-/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/devel/include/ros_learn/addRequest.h
+/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel/include/ros_learn/addRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/devel/include/ros_learn/addResponse.h
+/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel/include/ros_learn/addResponse.h
 string
 -
 vector
@@ -46,9 +46,9 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/src/ros_learn/src/add_server.cpp
+/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/src/ros_learn/src/add_server.cpp
 ros_learn/add.h
-/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/src/ros_learn/src/ros_learn/add.h
+/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/src/ros_learn/src/ros_learn/add.h
 ros/ros.h
 -
 

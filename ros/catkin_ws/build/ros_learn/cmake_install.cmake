@@ -1,8 +1,8 @@
-# Install script for directory: /home/zqh/PhoenixZ/Money_ros_study/catkin_ws/src/ros_learn
+# Install script for directory: /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/src/ros_learn
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,53 +38,53 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_learn/srv" TYPE FILE FILES "/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/src/ros_learn/srv/add.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_learn/srv" TYPE FILE FILES "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/src/ros_learn/srv/add.srv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_learn/cmake" TYPE FILE FILES "/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/build/ros_learn/catkin_generated/installspace/ros_learn-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_learn/cmake" TYPE FILE FILES "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/ros_learn/catkin_generated/installspace/ros_learn-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/devel/include/ros_learn")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel/include/ros_learn")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/devel/share/roseus/ros/ros_learn")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel/share/roseus/ros/ros_learn")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/devel/share/common-lisp/ros/ros_learn")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel/share/common-lisp/ros/ros_learn")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/devel/share/gennodejs/ros/ros_learn")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel/share/gennodejs/ros/ros_learn")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/devel/lib/python3/dist-packages/ros_learn")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel/lib/python3/dist-packages/ros_learn")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/devel/lib/python3/dist-packages/ros_learn")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel/lib/python3/dist-packages/ros_learn")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/build/ros_learn/catkin_generated/installspace/ros_learn.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/ros_learn/catkin_generated/installspace/ros_learn.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_learn/cmake" TYPE FILE FILES "/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/build/ros_learn/catkin_generated/installspace/ros_learn-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_learn/cmake" TYPE FILE FILES "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/ros_learn/catkin_generated/installspace/ros_learn-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_learn/cmake" TYPE FILE FILES
-    "/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/build/ros_learn/catkin_generated/installspace/ros_learnConfig.cmake"
-    "/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/build/ros_learn/catkin_generated/installspace/ros_learnConfig-version.cmake"
+    "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/ros_learn/catkin_generated/installspace/ros_learnConfig.cmake"
+    "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/ros_learn/catkin_generated/installspace/ros_learnConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_learn" TYPE FILE FILES "/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/src/ros_learn/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_learn" TYPE FILE FILES "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/src/ros_learn/package.xml")
 endif()
 

@@ -67,14 +67,14 @@ set(ros_learn_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(ros_learn_SOURCE_PREFIX /home/zqh/PhoenixZ/Money_ros_study/catkin_ws/src/ros_learn)
-  set(ros_learn_DEVEL_PREFIX /home/zqh/PhoenixZ/Money_ros_study/catkin_ws/devel)
+  set(ros_learn_SOURCE_PREFIX /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/src/ros_learn)
+  set(ros_learn_DEVEL_PREFIX /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel)
   set(ros_learn_INSTALL_PREFIX "")
   set(ros_learn_PREFIX ${ros_learn_DEVEL_PREFIX})
 else()
   set(ros_learn_SOURCE_PREFIX "")
   set(ros_learn_DEVEL_PREFIX "")
-  set(ros_learn_INSTALL_PREFIX /home/zqh/PhoenixZ/Money_ros_study/catkin_ws/install)
+  set(ros_learn_INSTALL_PREFIX /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/install)
   set(ros_learn_PREFIX ${ros_learn_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zqh/PhoenixZ/Money_ros_study/catkin_ws/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/install/lib;/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

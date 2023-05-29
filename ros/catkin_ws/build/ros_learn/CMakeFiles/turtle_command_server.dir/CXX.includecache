@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/src/ros_learn/src/rosservice.cpp
+/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/src/ros_learn/src/rosservice.cpp
 geometry_msgs/Twist.h
 -
 ros/ros.h

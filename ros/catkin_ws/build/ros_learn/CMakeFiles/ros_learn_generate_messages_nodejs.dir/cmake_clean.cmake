@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/zqh/PhoenixZ/Money_ros_study/catkin_ws/devel/share/gennodejs/ros/ros_learn/srv/add.js"
+  "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel/share/gennodejs/ros/ros_learn/srv/add.js"
   "CMakeFiles/ros_learn_generate_messages_nodejs"
 )
 
