@@ -13,9 +13,13 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   message_generation
   rosconsole
+  cv_bridge
+  
 )
 
 find_package(Eigen3 REQUIRED)
+find_package( OpenCV 3 REQUIRED )
+
 
 ## Generate services in the 'srv' folder
 add_service_files(
@@ -73,3 +77,22 @@ add_dependencies(add_client ros_learn_gencpp)
 
 add_executable(eigen src/eigen.cpp)
 target_link_libraries(eigen ${catkin_LIBRARIES}) 
+
+
+add_executable(ros_rtsp src/ros_rtsp.cpp)
+target_link_libraries(ros_rtsp ${catkin_LIBRARIES}) 
+
+add_executable(rtsp_sub src/rtsp_sub.cpp)
+target_link_libraries(rtsp_sub ${catkin_LIBRARIES} ${OpenCV_LIBS}) 
+
+add_executable(rtsp_pub src/rtsp_pub.cpp)
+target_link_libraries(rtsp_pub ${catkin_LIBRARIES} ${OpenCV_LIBS}) 
+
+add_executable(web_pub src/web_pub.cpp)
+target_link_libraries(web_pub ${catkin_LIBRARIES} ${OpenCV_LIBS}) 
+
+add_executable(web_sub src/web_sub.cpp)
+target_link_libraries(web_sub ${catkin_LIBRARIES} ${OpenCV_LIBS}) 
+
+add_executable(pid_control src/pid_control.cpp)
+target_link_libraries(pid_control ${catkin_LIBRARIES} ${OpenCV_LIBS}) 

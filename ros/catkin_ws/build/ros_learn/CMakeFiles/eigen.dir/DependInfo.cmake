@@ -21,6 +21,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/src/ros_learn/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+  "/usr/include/opencv4"
   "/usr/include/eigen3"
   )
 

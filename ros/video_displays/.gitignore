@@ -1,0 +1,6 @@
+.idea/
+.vscode/
+build/
+devel/
+src/websocket_video_package/cmake-build-debug/
+.catkin_workspace
