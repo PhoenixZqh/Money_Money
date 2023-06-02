@@ -1,0 +1,10 @@
+# Set up your streams to rtsp here.
+port: "8554"
+streams: 
+  stream-yay:
+    type: topic
+    source: /image_track_box
+    mountpoint: /nhy
+    caps: video/x-raw,framerate=100/1,width=320,height=240
+    bitrate: 1000     #码率
+
