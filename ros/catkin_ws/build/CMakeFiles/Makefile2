@@ -139,6 +139,8 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 # Directory level rules for directory ros_learn
 
 # Recursive "all" directory target.
+ros_learn/all: ros_learn/CMakeFiles/udp_pub.dir/all
+ros_learn/all: ros_learn/CMakeFiles/udp_sub.dir/all
 ros_learn/all: ros_learn/CMakeFiles/pid_control.dir/all
 ros_learn/all: ros_learn/CMakeFiles/rtsp_pub.dir/all
 ros_learn/all: ros_learn/CMakeFiles/eigen.dir/all
@@ -160,6 +162,8 @@ ros_learn/preinstall:
 .PHONY : ros_learn/preinstall
 
 # Recursive "clean" directory target.
+ros_learn/clean: ros_learn/CMakeFiles/udp_pub.dir/clean
+ros_learn/clean: ros_learn/CMakeFiles/udp_sub.dir/clean
 ros_learn/clean: ros_learn/CMakeFiles/pid_control.dir/clean
 ros_learn/clean: ros_learn/CMakeFiles/rtsp_pub.dir/clean
 ros_learn/clean: ros_learn/CMakeFiles/eigen.dir/clean
@@ -484,6 +488,60 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
+# Target rules for target ros_learn/CMakeFiles/udp_pub.dir
+
+# All Build rule for target.
+ros_learn/CMakeFiles/udp_pub.dir/all:
+	$(MAKE) -f ros_learn/CMakeFiles/udp_pub.dir/build.make ros_learn/CMakeFiles/udp_pub.dir/depend
+	$(MAKE) -f ros_learn/CMakeFiles/udp_pub.dir/build.make ros_learn/CMakeFiles/udp_pub.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/CMakeFiles --progress-num=37,38 "Built target udp_pub"
+.PHONY : ros_learn/CMakeFiles/udp_pub.dir/all
+
+# Build rule for subdir invocation for target.
+ros_learn/CMakeFiles/udp_pub.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ros_learn/CMakeFiles/udp_pub.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/CMakeFiles 0
+.PHONY : ros_learn/CMakeFiles/udp_pub.dir/rule
+
+# Convenience name for target.
+udp_pub: ros_learn/CMakeFiles/udp_pub.dir/rule
+
+.PHONY : udp_pub
+
+# clean rule for target.
+ros_learn/CMakeFiles/udp_pub.dir/clean:
+	$(MAKE) -f ros_learn/CMakeFiles/udp_pub.dir/build.make ros_learn/CMakeFiles/udp_pub.dir/clean
+.PHONY : ros_learn/CMakeFiles/udp_pub.dir/clean
+
+#=============================================================================
+# Target rules for target ros_learn/CMakeFiles/udp_sub.dir
+
+# All Build rule for target.
+ros_learn/CMakeFiles/udp_sub.dir/all:
+	$(MAKE) -f ros_learn/CMakeFiles/udp_sub.dir/build.make ros_learn/CMakeFiles/udp_sub.dir/depend
+	$(MAKE) -f ros_learn/CMakeFiles/udp_sub.dir/build.make ros_learn/CMakeFiles/udp_sub.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/CMakeFiles --progress-num=39,40 "Built target udp_sub"
+.PHONY : ros_learn/CMakeFiles/udp_sub.dir/all
+
+# Build rule for subdir invocation for target.
+ros_learn/CMakeFiles/udp_sub.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ros_learn/CMakeFiles/udp_sub.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/CMakeFiles 0
+.PHONY : ros_learn/CMakeFiles/udp_sub.dir/rule
+
+# Convenience name for target.
+udp_sub: ros_learn/CMakeFiles/udp_sub.dir/rule
+
+.PHONY : udp_sub
+
+# clean rule for target.
+ros_learn/CMakeFiles/udp_sub.dir/clean:
+	$(MAKE) -f ros_learn/CMakeFiles/udp_sub.dir/build.make ros_learn/CMakeFiles/udp_sub.dir/clean
+.PHONY : ros_learn/CMakeFiles/udp_sub.dir/clean
+
+#=============================================================================
 # Target rules for target ros_learn/CMakeFiles/pid_control.dir
 
 # All Build rule for target.
@@ -679,7 +737,7 @@ ros_learn/CMakeFiles/ros_learn_genpy.dir/clean:
 ros_learn/CMakeFiles/web_sub.dir/all:
 	$(MAKE) -f ros_learn/CMakeFiles/web_sub.dir/build.make ros_learn/CMakeFiles/web_sub.dir/depend
 	$(MAKE) -f ros_learn/CMakeFiles/web_sub.dir/build.make ros_learn/CMakeFiles/web_sub.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/CMakeFiles --progress-num=39,40 "Built target web_sub"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/CMakeFiles --progress-num=43,44 "Built target web_sub"
 .PHONY : ros_learn/CMakeFiles/web_sub.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1573,7 +1631,7 @@ ros_learn/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
 ros_learn/CMakeFiles/web_pub.dir/all:
 	$(MAKE) -f ros_learn/CMakeFiles/web_pub.dir/build.make ros_learn/CMakeFiles/web_pub.dir/depend
 	$(MAKE) -f ros_learn/CMakeFiles/web_pub.dir/build.make ros_learn/CMakeFiles/web_pub.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/CMakeFiles --progress-num=37,38 "Built target web_pub"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/CMakeFiles --progress-num=41,42 "Built target web_pub"
 .PHONY : ros_learn/CMakeFiles/web_pub.dir/all
 
 # Build rule for subdir invocation for target.

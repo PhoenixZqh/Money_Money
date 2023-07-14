@@ -285,6 +285,32 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named udp_pub
+
+# Build rule for target.
+udp_pub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 udp_pub
+.PHONY : udp_pub
+
+# fast build rule for target.
+udp_pub/fast:
+	$(MAKE) -f ros_learn/CMakeFiles/udp_pub.dir/build.make ros_learn/CMakeFiles/udp_pub.dir/build
+.PHONY : udp_pub/fast
+
+#=============================================================================
+# Target rules for targets named udp_sub
+
+# Build rule for target.
+udp_sub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 udp_sub
+.PHONY : udp_sub
+
+# fast build rule for target.
+udp_sub/fast:
+	$(MAKE) -f ros_learn/CMakeFiles/udp_sub.dir/build.make ros_learn/CMakeFiles/udp_sub.dir/build
+.PHONY : udp_sub/fast
+
+#=============================================================================
 # Target rules for targets named pid_control
 
 # Build rule for target.
@@ -1073,6 +1099,8 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... udp_pub"
+	@echo "... udp_sub"
 	@echo "... pid_control"
 	@echo "... rtsp_pub"
 	@echo "... eigen"

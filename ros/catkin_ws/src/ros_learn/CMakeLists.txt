@@ -96,3 +96,9 @@ target_link_libraries(web_sub ${catkin_LIBRARIES} ${OpenCV_LIBS})
 
 add_executable(pid_control src/pid_control.cpp)
 target_link_libraries(pid_control ${catkin_LIBRARIES} ${OpenCV_LIBS}) 
+
+add_executable(udp_sub src/udp_sub.cpp)
+target_link_libraries(udp_sub ${catkin_LIBRARIES} ${OpenCV_LIBS}) 
+
+add_executable(udp_pub src/udp_pub.cpp)
+target_link_libraries(udp_pub ${catkin_LIBRARIES} ${OpenCV_LIBS}) 

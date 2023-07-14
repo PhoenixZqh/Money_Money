@@ -265,6 +265,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "gtest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "gtest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   "gtest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "ros_learn/CMakeFiles/udp_pub.dir/DependInfo.cmake"
+  "ros_learn/CMakeFiles/udp_sub.dir/DependInfo.cmake"
   "ros_learn/CMakeFiles/pid_control.dir/DependInfo.cmake"
   "ros_learn/CMakeFiles/rtsp_pub.dir/DependInfo.cmake"
   "ros_learn/CMakeFiles/eigen.dir/DependInfo.cmake"

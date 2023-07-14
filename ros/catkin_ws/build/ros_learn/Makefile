@@ -168,6 +168,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+ros_learn/CMakeFiles/udp_pub.dir/rule:
+	cd /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_learn/CMakeFiles/udp_pub.dir/rule
+.PHONY : ros_learn/CMakeFiles/udp_pub.dir/rule
+
+# Convenience name for target.
+udp_pub: ros_learn/CMakeFiles/udp_pub.dir/rule
+
+.PHONY : udp_pub
+
+# fast build rule for target.
+udp_pub/fast:
+	cd /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build && $(MAKE) -f ros_learn/CMakeFiles/udp_pub.dir/build.make ros_learn/CMakeFiles/udp_pub.dir/build
+.PHONY : udp_pub/fast
+
+# Convenience name for target.
+ros_learn/CMakeFiles/udp_sub.dir/rule:
+	cd /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_learn/CMakeFiles/udp_sub.dir/rule
+.PHONY : ros_learn/CMakeFiles/udp_sub.dir/rule
+
+# Convenience name for target.
+udp_sub: ros_learn/CMakeFiles/udp_sub.dir/rule
+
+.PHONY : udp_sub
+
+# fast build rule for target.
+udp_sub/fast:
+	cd /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build && $(MAKE) -f ros_learn/CMakeFiles/udp_sub.dir/build.make ros_learn/CMakeFiles/udp_sub.dir/build
+.PHONY : udp_sub/fast
+
+# Convenience name for target.
 ros_learn/CMakeFiles/pid_control.dir/rule:
 	cd /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ros_learn/CMakeFiles/pid_control.dir/rule
 .PHONY : ros_learn/CMakeFiles/pid_control.dir/rule
@@ -1130,6 +1160,60 @@ src/rtsp_sub.cpp.s:
 	cd /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build && $(MAKE) -f ros_learn/CMakeFiles/rtsp_sub.dir/build.make ros_learn/CMakeFiles/rtsp_sub.dir/src/rtsp_sub.cpp.s
 .PHONY : src/rtsp_sub.cpp.s
 
+src/udp_pub.o: src/udp_pub.cpp.o
+
+.PHONY : src/udp_pub.o
+
+# target to build an object file
+src/udp_pub.cpp.o:
+	cd /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build && $(MAKE) -f ros_learn/CMakeFiles/udp_pub.dir/build.make ros_learn/CMakeFiles/udp_pub.dir/src/udp_pub.cpp.o
+.PHONY : src/udp_pub.cpp.o
+
+src/udp_pub.i: src/udp_pub.cpp.i
+
+.PHONY : src/udp_pub.i
+
+# target to preprocess a source file
+src/udp_pub.cpp.i:
+	cd /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build && $(MAKE) -f ros_learn/CMakeFiles/udp_pub.dir/build.make ros_learn/CMakeFiles/udp_pub.dir/src/udp_pub.cpp.i
+.PHONY : src/udp_pub.cpp.i
+
+src/udp_pub.s: src/udp_pub.cpp.s
+
+.PHONY : src/udp_pub.s
+
+# target to generate assembly for a file
+src/udp_pub.cpp.s:
+	cd /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build && $(MAKE) -f ros_learn/CMakeFiles/udp_pub.dir/build.make ros_learn/CMakeFiles/udp_pub.dir/src/udp_pub.cpp.s
+.PHONY : src/udp_pub.cpp.s
+
+src/udp_sub.o: src/udp_sub.cpp.o
+
+.PHONY : src/udp_sub.o
+
+# target to build an object file
+src/udp_sub.cpp.o:
+	cd /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build && $(MAKE) -f ros_learn/CMakeFiles/udp_sub.dir/build.make ros_learn/CMakeFiles/udp_sub.dir/src/udp_sub.cpp.o
+.PHONY : src/udp_sub.cpp.o
+
+src/udp_sub.i: src/udp_sub.cpp.i
+
+.PHONY : src/udp_sub.i
+
+# target to preprocess a source file
+src/udp_sub.cpp.i:
+	cd /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build && $(MAKE) -f ros_learn/CMakeFiles/udp_sub.dir/build.make ros_learn/CMakeFiles/udp_sub.dir/src/udp_sub.cpp.i
+.PHONY : src/udp_sub.cpp.i
+
+src/udp_sub.s: src/udp_sub.cpp.s
+
+.PHONY : src/udp_sub.s
+
+# target to generate assembly for a file
+src/udp_sub.cpp.s:
+	cd /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build && $(MAKE) -f ros_learn/CMakeFiles/udp_sub.dir/build.make ros_learn/CMakeFiles/udp_sub.dir/src/udp_sub.cpp.s
+.PHONY : src/udp_sub.cpp.s
+
 src/web_pub.o: src/web_pub.cpp.o
 
 .PHONY : src/web_pub.o
@@ -1192,6 +1276,8 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install"
+	@echo "... udp_pub"
+	@echo "... udp_sub"
 	@echo "... edit_cache"
 	@echo "... pid_control"
 	@echo "... rtsp_pub"
@@ -1272,6 +1358,12 @@ help:
 	@echo "... src/rtsp_sub.o"
 	@echo "... src/rtsp_sub.i"
 	@echo "... src/rtsp_sub.s"
+	@echo "... src/udp_pub.o"
+	@echo "... src/udp_pub.i"
+	@echo "... src/udp_pub.s"
+	@echo "... src/udp_sub.o"
+	@echo "... src/udp_sub.i"
+	@echo "... src/udp_sub.s"
 	@echo "... src/web_pub.o"
 	@echo "... src/web_pub.i"
 	@echo "... src/web_pub.s"

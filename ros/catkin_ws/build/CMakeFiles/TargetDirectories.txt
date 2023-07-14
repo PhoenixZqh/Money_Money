@@ -37,6 +37,8 @@
 /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/gtest/googletest/CMakeFiles/gtest.dir
 /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/ros_learn/CMakeFiles/install/strip.dir
 /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/ros_learn/CMakeFiles/install.dir
+/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/ros_learn/CMakeFiles/udp_pub.dir
+/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/ros_learn/CMakeFiles/udp_sub.dir
 /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/ros_learn/CMakeFiles/edit_cache.dir
 /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/ros_learn/CMakeFiles/pid_control.dir
 /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/ros_learn/CMakeFiles/rtsp_pub.dir
