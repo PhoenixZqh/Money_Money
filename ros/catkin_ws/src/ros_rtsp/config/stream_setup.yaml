@@ -1,5 +1,5 @@
 # Set up your streams to rtsp here.
-port: "8554"
+# port: "8000"
 streams: 
   stream-yay:
     type: topic

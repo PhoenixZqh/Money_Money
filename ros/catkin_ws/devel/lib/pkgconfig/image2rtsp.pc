@@ -1,8 +1,0 @@
-prefix=/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel
-
-Name: image2rtsp
-Description: Description of image2rtsp
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

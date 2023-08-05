@@ -2,7 +2,7 @@
     <node pkg="websocket_video_package" name="websocket_video_package_node" type="websocket_video_package_node"
           output="screen">
         <param name="websocketport" value="8000"/>
-        <param name="topicName_rgb" value="/image_track_box"/>
+        <param name="topicName_rgb" value="/cam"/>
     </node>
 
 </launch>
