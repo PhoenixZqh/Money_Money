@@ -12,7 +12,7 @@
 
 int main(int argc, const char* argv[])
 {
-    const std::string fname = "/home/zqh/DATA/gps.mp4";
+    const std::string fname = "/home/zqh/test.mp4";
 
     cv::namedWindow("CPU", cv::WINDOW_NORMAL);
 
