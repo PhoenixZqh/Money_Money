@@ -132,7 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/gtest/cmake_install.cmake")
   include("/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/ros_learn/cmake_install.cmake")
-  include("/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/ros_rtsp/cmake_install.cmake")
+  include("/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/test_rtsp/cmake_install.cmake")
 
 endif()
 

@@ -10,8 +10,7 @@ project(ros_learn)
 SET(CMAKE_BUILD_TYPE "Debug")
 set(OpenCV_DIR "/usr/local/opencv-4.5.1")
 set(CUDA_BIN_PATH /usr/local/cuda/)
-
-
+# set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake) 
 
 find_package(catkin REQUIRED COMPONENTS
   roscpp
@@ -131,3 +130,6 @@ target_link_libraries(test_rtsp ${catkin_LIBRARIES} ${OpenCV_LIBS} ${GST_LIBRARI
 
 add_executable(gstreamer_rtsp src/gstreamer_rtsp.cpp)
 target_link_libraries(gstreamer_rtsp ${catkin_LIBRARIES} ${OpenCV_LIBS} ${GST_LIBRARIES}  ${FFMPEG_LIBRARIES} ${CUDA_LIBRARIES}) 
+
+add_executable(opencv_push_rtsp src/opencv_push_rtsp.cpp)
+target_link_libraries(opencv_push_rtsp ${catkin_LIBRARIES} ${OpenCV_LIBS} ${GST_LIBRARIES}  ${FFMPEG_LIBRARIES} ${CUDA_LIBRARIES}) 

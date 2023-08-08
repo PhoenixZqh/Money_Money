@@ -6,4 +6,4 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("ros_learn")
-subdirs("ros_rtsp")
+subdirs("test_rtsp")

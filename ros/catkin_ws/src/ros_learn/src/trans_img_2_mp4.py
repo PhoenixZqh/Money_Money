@@ -28,6 +28,6 @@ def images_to_video(input_folder, output_video):
 
 
 # 调用函数进行转换
-input_folder = '/home/zqh/DATA/pic/'
-output_video = '/home/zqh/DATA/gps.mp4'
+input_folder = '/home/zqh/DATA/sequences/uav0000201_00000_v/'
+output_video = '/home/zqh/DATA/vis.mp4'
 images_to_video(input_folder, output_video)
