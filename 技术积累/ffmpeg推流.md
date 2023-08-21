@@ -152,7 +152,7 @@
     a. 运行rtsp-simple-server
     b. 编译运行上述代码，topic、 图像size、 rtsp地址换成自己的
     c. nvidia-smi查看gpu上已经运行了ffmpeg
-        ![../Doc/img/nvidia-smi.png](../Doc/img/nvidia-smi.png)
+        ![../Doc/img/nvidia-smi.png](../技术积累/img/nvidia-smi.png)
 
 
 
