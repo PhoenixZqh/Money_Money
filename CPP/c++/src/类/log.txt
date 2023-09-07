@@ -1,0 +1,2 @@
+Done processing move_constructer.cc
+Total errors found: 29
