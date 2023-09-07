@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build'
+export PWD='/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/build'

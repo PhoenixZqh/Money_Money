@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel/lib/test_rtsp/ffmpeg_opencv_rtsp"
-  "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel/lib/test_rtsp/ffmpeg_opencv_rtsp.pdb"
+  "/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/devel/lib/test_rtsp/ffmpeg_opencv_rtsp"
+  "/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/devel/lib/test_rtsp/ffmpeg_opencv_rtsp.pdb"
   "CMakeFiles/ffmpeg_opencv_rtsp.dir/src/ffmpeg_opencv_rtsp.cpp.o"
 )
 

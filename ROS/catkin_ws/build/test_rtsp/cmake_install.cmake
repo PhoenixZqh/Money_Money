@@ -1,8 +1,8 @@
-# Install script for directory: /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/src/test_rtsp
+# Install script for directory: /home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/src/test_rtsp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/test_rtsp/catkin_generated/installspace/test_rtsp.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/build/test_rtsp/catkin_generated/installspace/test_rtsp.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/test_rtsp/cmake" TYPE FILE FILES
-    "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/test_rtsp/catkin_generated/installspace/test_rtspConfig.cmake"
-    "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/test_rtsp/catkin_generated/installspace/test_rtspConfig-version.cmake"
+    "/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/build/test_rtsp/catkin_generated/installspace/test_rtspConfig.cmake"
+    "/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/build/test_rtsp/catkin_generated/installspace/test_rtspConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/test_rtsp" TYPE FILE FILES "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/src/test_rtsp/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/test_rtsp" TYPE FILE FILES "/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/src/test_rtsp/package.xml")
 endif()
 

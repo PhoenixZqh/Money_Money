@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/src/test_rtsp/src/ffmpeg_cpu.cpp" "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/build/test_rtsp/CMakeFiles/ffmpeg_cpu.dir/src/ffmpeg_cpu.cpp.o"
+  "/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/src/test_rtsp/src/ffmpeg_cpu.cpp" "/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/build/test_rtsp/CMakeFiles/ffmpeg_cpu.dir/src/ffmpeg_cpu.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -19,10 +19,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/usr/local/include/gstreamer-1.0"
-  "/usr/include/gstreamer-1.0"
-  "/usr/include/glib-2.0"
-  "/usr/lib/x86_64-linux-gnu/glib-2.0/include"
   "/usr/local/opencv-4.5.1/include/opencv4"
   )
 

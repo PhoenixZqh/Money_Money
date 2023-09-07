@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel/lib/test_rtsp/ffmpeg_cpu"
-  "/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel/lib/test_rtsp/ffmpeg_cpu.pdb"
+  "/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/devel/lib/test_rtsp/ffmpeg_cpu"
+  "/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/devel/lib/test_rtsp/ffmpeg_cpu.pdb"
   "CMakeFiles/ffmpeg_cpu.dir/src/ffmpeg_cpu.cpp.o"
 )
 

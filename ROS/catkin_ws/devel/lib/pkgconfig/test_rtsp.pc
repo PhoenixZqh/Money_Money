@@ -1,4 +1,4 @@
-prefix=/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel
+prefix=/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/devel
 
 Name: test_rtsp
 Description: Description of test_rtsp

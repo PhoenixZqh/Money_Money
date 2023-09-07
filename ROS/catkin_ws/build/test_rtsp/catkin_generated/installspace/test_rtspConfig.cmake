@@ -67,14 +67,14 @@ set(test_rtsp_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(test_rtsp_SOURCE_PREFIX /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/src/test_rtsp)
-  set(test_rtsp_DEVEL_PREFIX /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel)
+  set(test_rtsp_SOURCE_PREFIX /home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/src/test_rtsp)
+  set(test_rtsp_DEVEL_PREFIX /home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/devel)
   set(test_rtsp_INSTALL_PREFIX "")
   set(test_rtsp_PREFIX ${test_rtsp_DEVEL_PREFIX})
 else()
   set(test_rtsp_SOURCE_PREFIX "")
   set(test_rtsp_DEVEL_PREFIX "")
-  set(test_rtsp_INSTALL_PREFIX /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/install)
+  set(test_rtsp_INSTALL_PREFIX /home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/install)
   set(test_rtsp_PREFIX ${test_rtsp_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/install/lib;/home/zqh/PhoenixZ/Money_Money/ros/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/install/lib;/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

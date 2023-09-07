@@ -65,5 +65,5 @@ target_link_libraries(ffmpeg_opencv_rtsp ${catkin_LIBRARIES} ${OpenCV_LIBS} ${GS
 add_executable(gst_opencv src/gst_opencv.cpp)
 target_link_libraries(gst_opencv ${catkin_LIBRARIES} ${OpenCV_LIBS} ${GST_LIBRARIES}  ${FFMPEG_LIBRARIES} ${CUDA_LIBRARIES} ) 
 
-add_executable(find_problem src/find_problem.cpp)
-target_link_libraries(find_problem ${catkin_LIBRARIES} ${OpenCV_LIBS} ${GST_LIBRARIES}  ${FFMPEG_LIBRARIES} ${CUDA_LIBRARIES} ) 
+# add_executable(find_problem src/find_problem.cpp)
+# target_link_libraries(find_problem ${catkin_LIBRARIES} ${OpenCV_LIBS} ${GST_LIBRARIES}  ${FFMPEG_LIBRARIES} ${CUDA_LIBRARIES} ) 
