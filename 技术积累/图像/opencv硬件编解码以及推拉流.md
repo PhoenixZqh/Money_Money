@@ -165,7 +165,7 @@ int main()
 
 #endif
 ```
-![../DOC/img/nvidia-smi1.png](../技术积累/img/nvidia-smi1.png)
+![../DOC/img/nvidia-smi1.png](../img/nvidia-smi1.png)
 
 
 

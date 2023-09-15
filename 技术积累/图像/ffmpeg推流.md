@@ -1,6 +1,6 @@
 # ffmpeg+rtsp-simple-server 推流
 
-1. 检查ffmpeg是否支持硬件加速以及硬件编码与解码
+## 1. 检查ffmpeg是否支持硬件加速以及硬件编码与解码
    ```xml
    ffmpeg -encoders | grep nvenc
    ```
@@ -26,7 +26,7 @@
 
    b. 如果不支持，则安装编译ffmpeg， 源码安装或者二进制安装，网上资料很多
 
-2. 安装rtsp-simple-server
+## 2. 安装rtsp-simple-server
 
     ```xml
     https://github.com/bluenviron/mediamtx/releases
@@ -34,7 +34,7 @@
     下载完成后解压，直接./运行可执行文件即可
 
 
-3. 测试ffmpeg硬件推流
+## 3. 测试ffmpeg硬件推流
 
     ```cpp
     #include <fstream>
@@ -149,10 +149,59 @@
     }
 
     ```
-    a. 运行rtsp-simple-server
-    b. 编译运行上述代码，topic、 图像size、 rtsp地址换成自己的
-    c. nvidia-smi查看gpu上已经运行了ffmpeg
-        ![../Doc/img/nvidia-smi.png](../技术积累/img/nvidia-smi.png)
+
+a. 运行rtsp-simple-server
+b. 编译运行上述代码，topic、 图像size、 rtsp地址换成自己的
+c. nvidia-smi查看gpu上已经运行了ffmpeg
+        ![](../img/nvidia-smi.png)
 
 
+## 4. jetson-nx 推流
 
+1）下载jetson-ffmpeg 
+```xml
+git clone https://github.com/jocover/jetson-ffmpeg.git
+cd jetson-ffmpeg
+```
+2）修改nvmpi.pc.in
+
+```xml
+Libs:-L${libdir} -lnvmpi  
+```
+改成
+```xml
+Libs:-L${libdir} -lnvmpi -L/usr/lib/aarch64-linux-gnu/tegra -lnvbufsurface
+```
+3） 编译jetson-ffmpeg
+```xml
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+sudo ldconfig
+```
+4）下载补丁文件
+```xml
+git clone git://source.ffmpeg.org/ffmpeg.git -b release/4.2 --depth=1
+cd ffmpeg
+wget https://github.com/jocover/jetson-ffmpeg/raw/master/ffmpeg_nvmpi.patch
+git apply ffmpeg_nvmpi.patch
+```
+5） 编译 ， 路径改成自己的
+```xml
+./configure --enable-static --enable-shared --enable-nonfree --enable-libnpp --enable-nvmpi --enable-gpl --disable-opencl --extra-cflags="-I/usr/local/cuda-11.4/include -I/usr/local/include" --extra-ldflags="-L/usr/local/cuda-11.4/lib64 -L/usr/local/lib -L/usr/lib/aarch64-linux-gnu" --enable-libx264 --enable-libx265 --extra-libs="-ldl -lm -lstdc++ -lpthread -lnuma" --prefix=/usr/local
+```
+6） 检验是否配置成功
+```xml
+$ffmpeg -decoders | grep h264
+ VFS..D h264                 H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10
+ V..... h264_v4l2m2m         V4L2 mem2mem H.264 decoder wrapper (codec h264)
+ V..... h264_nvmpi           h264 (nvmpi) (codec h264)
+ 
+$ffmpeg -encoders | grep h264
+ V..... h264_nvmpi           nvmpi H.264 encoder wrapper (codec h264)
+ V..... libx264              libx264 H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 (codec h264)
+ V..... libx264rgb           libx264 H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 RGB (codec h264)
+ V..... h264_v4l2m2m         V4L2 mem2mem H.264 encoder wrapper (codec h264)
+```
