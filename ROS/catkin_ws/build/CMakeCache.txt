@@ -648,6 +648,12 @@ message_generation_DIR:PATH=/opt/ros/noetic/share/message_generation/cmake
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/noetic/share/message_runtime/cmake
 
+//Value Computed by CMake
+opencv_learn_BINARY_DIR:STATIC=/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/build/opencv_learn
+
+//Value Computed by CMake
+opencv_learn_SOURCE_DIR:STATIC=/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/src/opencv_learn
+
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/noetic/share/pluginlib/cmake
 

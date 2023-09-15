@@ -285,43 +285,17 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
-# Target rules for targets named animal_loader
+# Target rules for targets named puttext_chinese
 
 # Build rule for target.
-animal_loader: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 animal_loader
-.PHONY : animal_loader
+puttext_chinese: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 puttext_chinese
+.PHONY : puttext_chinese
 
 # fast build rule for target.
-animal_loader/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/animal_loader.dir/build.make learning_pluginlib/CMakeFiles/animal_loader.dir/build
-.PHONY : animal_loader/fast
-
-#=============================================================================
-# Target rules for targets named duck_loader
-
-# Build rule for target.
-duck_loader: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 duck_loader
-.PHONY : duck_loader
-
-# fast build rule for target.
-duck_loader/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/duck_loader.dir/build.make learning_pluginlib/CMakeFiles/duck_loader.dir/build
-.PHONY : duck_loader/fast
-
-#=============================================================================
-# Target rules for targets named animal_plugin
-
-# Build rule for target.
-animal_plugin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 animal_plugin
-.PHONY : animal_plugin
-
-# fast build rule for target.
-animal_plugin/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/animal_plugin.dir/build.make learning_pluginlib/CMakeFiles/animal_plugin.dir/build
-.PHONY : animal_plugin/fast
+puttext_chinese/fast:
+	$(MAKE) -f opencv_learn/CMakeFiles/puttext_chinese.dir/build.make opencv_learn/CMakeFiles/puttext_chinese.dir/build
+.PHONY : puttext_chinese/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_py
@@ -333,7 +307,7 @@ std_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/std_msgs_generate_messages_py.dir/build.make learning_pluginlib/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(MAKE) -f opencv_learn/CMakeFiles/std_msgs_generate_messages_py.dir/build.make opencv_learn/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -346,7 +320,7 @@ std_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make learning_pluginlib/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f opencv_learn/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make opencv_learn/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -359,7 +333,7 @@ roscpp_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make learning_pluginlib/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	$(MAKE) -f opencv_learn/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make opencv_learn/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
@@ -372,21 +346,8 @@ roscpp_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/roscpp_generate_messages_eus.dir/build.make learning_pluginlib/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	$(MAKE) -f opencv_learn/CMakeFiles/roscpp_generate_messages_eus.dir/build.make opencv_learn/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named happy_duck_plugin
-
-# Build rule for target.
-happy_duck_plugin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 happy_duck_plugin
-.PHONY : happy_duck_plugin
-
-# fast build rule for target.
-happy_duck_plugin/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/happy_duck_plugin.dir/build.make learning_pluginlib/CMakeFiles/happy_duck_plugin.dir/build
-.PHONY : happy_duck_plugin/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_nodejs
@@ -398,7 +359,7 @@ rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make learning_pluginlib/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f opencv_learn/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make opencv_learn/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -411,7 +372,7 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make learning_pluginlib/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f opencv_learn/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make opencv_learn/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -424,7 +385,7 @@ roscpp_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/roscpp_generate_messages_py.dir/build.make learning_pluginlib/CMakeFiles/roscpp_generate_messages_py.dir/build
+	$(MAKE) -f opencv_learn/CMakeFiles/roscpp_generate_messages_py.dir/build.make opencv_learn/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
@@ -437,7 +398,7 @@ std_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make learning_pluginlib/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f opencv_learn/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make opencv_learn/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -450,7 +411,7 @@ roscpp_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make learning_pluginlib/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	$(MAKE) -f opencv_learn/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make opencv_learn/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -463,7 +424,7 @@ rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make learning_pluginlib/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f opencv_learn/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make opencv_learn/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -476,7 +437,7 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make learning_pluginlib/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f opencv_learn/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make opencv_learn/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -489,7 +450,7 @@ rosgraph_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make learning_pluginlib/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f opencv_learn/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make opencv_learn/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -502,21 +463,8 @@ rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make learning_pluginlib/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f opencv_learn/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make opencv_learn/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named simple_duck_plugin
-
-# Build rule for target.
-simple_duck_plugin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 simple_duck_plugin
-.PHONY : simple_duck_plugin
-
-# fast build rule for target.
-simple_duck_plugin/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/simple_duck_plugin.dir/build.make learning_pluginlib/CMakeFiles/simple_duck_plugin.dir/build
-.PHONY : simple_duck_plugin/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_lisp
@@ -528,7 +476,7 @@ roscpp_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make learning_pluginlib/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	$(MAKE) -f opencv_learn/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make opencv_learn/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
@@ -541,7 +489,7 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f learning_pluginlib/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make learning_pluginlib/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	$(MAKE) -f opencv_learn/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make opencv_learn/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -1060,14 +1008,11 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... animal_loader"
-	@echo "... duck_loader"
-	@echo "... animal_plugin"
+	@echo "... puttext_chinese"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
-	@echo "... happy_duck_plugin"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
@@ -1077,7 +1022,6 @@ help:
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... simple_duck_plugin"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... opencv_push_rtsp"

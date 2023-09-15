@@ -1,0 +1,8 @@
+prefix=/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/devel
+
+Name: opencv_learn
+Description: Description of opencv_learn
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,2 @@
+track8yolo
+-DCATKIN_DEVEL_PREFIX=/home/zqh/trackUav_ws/devel -DCMAKE_INSTALL_PREFIX=/home/zqh/trackUav_ws/install -G Unix Makefiles

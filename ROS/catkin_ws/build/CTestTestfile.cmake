@@ -5,6 +5,6 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
-subdirs("learning_pluginlib")
+subdirs("opencv_learn")
 subdirs("ros_learn")
 subdirs("test_rtsp")

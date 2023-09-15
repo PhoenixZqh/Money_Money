@@ -1,2 +1,2 @@
-learning_pluginlib:ros_learn:test_rtsp
+opencv_learn:ros_learn:test_rtsp
 -DCATKIN_DEVEL_PREFIX=/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/install -G Unix Makefiles
