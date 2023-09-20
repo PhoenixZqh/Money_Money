@@ -1,8 +1,0 @@
-prefix=/home/zqh/trackUav_ws/devel
-
-Name: track8yolo
-Description: Description of track8yolo
-Version: 0.0.0
-Cflags: -I/home/zqh/trackUav_ws/devel/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime
