@@ -10,7 +10,7 @@ project(test_rtsp)
 
 SET(CMAKE_BUILD_TYPE "Debug")
 set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake) 
-set(OpenCV_DIR "/usr/local/opencv-4.5.1")
+set(OpenCV_DIR "/usr/local/opencv-4.2.0")
 set(CUDA_BIN_PATH /usr/local/cuda/)
 
 find_package(catkin REQUIRED COMPONENTS

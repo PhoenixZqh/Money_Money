@@ -1,8 +1,0 @@
-prefix=/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/devel
-
-Name: test_rtsp
-Description: Description of test_rtsp
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

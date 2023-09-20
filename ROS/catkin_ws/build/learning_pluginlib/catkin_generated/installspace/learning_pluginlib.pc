@@ -1,8 +1,0 @@
-prefix=/home/zqh/phoenixZ/Money_Money/ROS/catkin_ws/install
-
-Name: learning_pluginlib
-Description: Description of learning_pluginlib
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

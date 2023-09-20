@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/src/socket_learn/src/udp_client.cpp
+iostream
+-
+string
+-
+cstring
+-
+cstdlib
+-
+arpa/inet.h
+-
+sys/socket.h
+-
+unistd.h
+-
+

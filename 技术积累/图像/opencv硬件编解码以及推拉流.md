@@ -1,35 +1,39 @@
 # ubuntu下opencv环境配置
 
 ## 本文使用环境为
- -  nvidia-driver 525.125.06
- -  cuda 11.4
- -  cudnn 8.4.0
- -  opencv 4.5.1 
- -  nvidia vedio codec sdk 11.1.5
+
+- nvidia-driver 525.125.06
+- cuda 11.4
+- cudnn 8.4.0
+- opencv 4.5.1
+- nvidia vedio codec sdk 11.1.5
 
  ==需要注意的是，nvcodec有最低支持的显卡驱动版本要求==
 
- ## opencv安装与编译
- 1. 下载opencv-4.5.1与opencv-contrib-4.5.1
-    [opencv传送门](https://opencv.org/releases/)
-    [opencv-contrib传送门](https://github.com/opencv/opencv_contrib/tags)
+## opencv安装与编译
 
- 2. 将上面两个文件夹放到一个文件夹下，在/usr/local/目录下创建文件夹opencv-4.5.1(库将安装到这个目录下)
- 3. 删除其他所有的opencv版本（我是这么做的，因为会出现很多的警告）
-    ```xml
-    cd /usr
-    sudo find . -name "*opencv*" | xargs sudo rm -rf
-    ```
- 4. 下载nvdio vedio codec sdk， 将inference下的头文件拷贝到cuda include目录下 
- 5. OpenCVDetectCUDA.cmake下，将61行变成
+1. 下载opencv-4.5.1与opencv-contrib-4.5.1
+   [opencv传送门](https://opencv.org/releases/)
+   [opencv-contrib传送门](https://github.com/opencv/opencv_contrib/tags)
+2. 将上面两个文件夹放到一个文件夹下，在/usr/local/目录下创建文件夹opencv-4.5.1(库将安装到这个目录下)
+3. 删除其他所有的opencv版本（我是这么做的，因为会出现很多的警告）
+
    ```xml
+   cd /usr
+   sudo find . -name "*opencv*" | xargs sudo rm -rf
+   ```
+4. 下载nvdio vedio codec sdk， 将inference下的头文件拷贝到cuda include目录下
+5. OpenCVDetectCUDA.cmake下，将61行变成
+
+```xml
    # PATHS "${CUDA_TOOLKIT_TARGET_DIR}" "${CUDA_TOOLKIT_ROOT_DIR}" 原始的
    PATHS "${CUDA_TOOLKIT_TARGET_DIR}" "${CUDA_TOOLKIT_ROOT_DIR}" "/usr/include" "/usr/local/include/ffnvcodec" #更改后的
-   ```
- 6. 进入opencv-contrib cudacodec  下找到precomp.hpp，添加头文件 `#include <nvcuvid.h>`
- 7. 编译opencv
- 
- ```xml
+```
+
+6. 进入opencv-contrib cudacodec  下找到precomp.hpp，添加头文件 `#include <nvcuvid.h>`
+7. 编译opencv
+
+```xml
     cmake -D CMAKE_BUILD_TYPE=RELEASE \
     -D CMAKE_INSTALL_PREFIX=/usr/local/opencv-4.5.1 \
     -D INSTALL_PYTHON_EXAMPLES=ON \
@@ -59,18 +63,21 @@
     -D WITH_GSTREAMER=ON \
     -D WITH_LZ4=ON \
     -D PYTHON_DEFAULT_EXECUTABLE=$(which python3) \
-    -D CUDA_nppicom_LIBRARY=stdc++ \	
+    -D CUDA_nppicom_LIBRARY=stdc++ \
     -D CUDA_ARCH_BIN="8.6"  ..
  
- ```
- ```xml
- make -j6  #make -j 会卡住
- ```
- ```xml
- sudo make install
- ```
+```
 
- 8. 测试拉流代码
+```xml
+ make -j6  #make -j 会卡住
+```
+
+```xml
+ sudo make install
+```
+
+8. 测试拉流代码
+
 ```cpp
 #include "opencv2/opencv_modules.hpp"
 #include <iostream>
@@ -165,8 +172,5 @@ int main()
 
 #endif
 ```
-![../DOC/img/nvidia-smi1.png](../img/nvidia-smi1.png)
 
-
-
-   
+![../DOC/img/nvidia-smi1.png](img/nvidia-smi1.png)
