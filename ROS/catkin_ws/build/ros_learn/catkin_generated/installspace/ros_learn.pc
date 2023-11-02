@@ -1,0 +1,8 @@
+prefix=/home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/install
+
+Name: ros_learn
+Description: Description of ros_learn
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs message_runtime

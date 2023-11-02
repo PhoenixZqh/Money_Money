@@ -8,7 +8,7 @@ project(ros_learn)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 SET(CMAKE_BUILD_TYPE "Debug")
-set(OpenCV_DIR "/usr/local/opencv-4.5.1")
+# set(OpenCV_DIR "/usr/local/opencv-4.5.1")
 set(CUDA_BIN_PATH /usr/local/cuda/)
 # set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake) 
 
@@ -25,8 +25,8 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 find_package(Eigen3 REQUIRED)
-find_package( OpenCV 4.5.1 REQUIRED )
-find_package(CUDA REQUIRED)
+find_package(OpenCV 4.2 REQUIRED )
+# find_package(CUDA REQUIRED)
 
 
 message(STATUS "Found OpenCV version ${OpenCV_VERSION}")
@@ -76,7 +76,7 @@ include_directories(
 
 link_directories(
     # /usr/local/lib
-    ${CUDA_LIBRARIES}
+    # ${CUDA_LIBRARIES}
     ${OpenCV_LIBS}  
 )
 
@@ -133,3 +133,6 @@ target_link_libraries(gstreamer_rtsp ${catkin_LIBRARIES} ${OpenCV_LIBS} ${GST_LI
 
 add_executable(opencv_push_rtsp src/opencv_push_rtsp.cpp)
 target_link_libraries(opencv_push_rtsp ${catkin_LIBRARIES} ${OpenCV_LIBS} ${GST_LIBRARIES}  ${FFMPEG_LIBRARIES} ${CUDA_LIBRARIES}) 
+
+add_executable(get_cali src/get_cali.cpp)
+target_link_libraries(get_cali ${catkin_LIBRARIES} ${OpenCV_LIBS} ) 

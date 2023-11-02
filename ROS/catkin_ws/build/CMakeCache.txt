@@ -37,7 +37,7 @@ CATKIN_SKIP_TESTING:BOOL=OFF
 CATKIN_SYMLINK_INSTALL:BOOL=OFF
 
 //List of ';' separated packages to build
-CATKIN_WHITELIST_PACKAGES:STRING=socket_learn
+CATKIN_WHITELIST_PACKAGES:STRING=
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
@@ -297,6 +297,61 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Compile device code in 64 bit mode
+CUDA_64_BIT_DEVICE_CODE:BOOL=ON
+
+//Attach the build rule to the CUDA source file.  Enable only when
+// the CUDA source file is added to at most one target.
+CUDA_ATTACH_VS_BUILD_RULE_TO_CUDA_FILE:BOOL=ON
+
+//Generate and parse .cubin files in Device mode.
+CUDA_BUILD_CUBIN:BOOL=OFF
+
+//Build in Emulation mode
+CUDA_BUILD_EMULATION:BOOL=OFF
+
+//Directory to put all the output files.  If blank it will default
+// to the CMAKE_CURRENT_BINARY_DIR
+CUDA_GENERATED_OUTPUT_DIR:PATH=
+
+//Generated file extension
+CUDA_HOST_COMPILATION_CPP:BOOL=ON
+
+//Host side compiler used by NVCC
+CUDA_HOST_COMPILER:FILEPATH=/usr/bin/cc
+
+//Semi-colon delimit multiple arguments. during all build types.
+CUDA_NVCC_FLAGS:STRING=
+
+//Semi-colon delimit multiple arguments. during DEBUG builds.
+CUDA_NVCC_FLAGS_DEBUG:STRING=
+
+//Semi-colon delimit multiple arguments. during MINSIZEREL builds.
+CUDA_NVCC_FLAGS_MINSIZEREL:STRING=
+
+//Semi-colon delimit multiple arguments. during RELEASE builds.
+CUDA_NVCC_FLAGS_RELEASE:STRING=
+
+//Semi-colon delimit multiple arguments. during RELWITHDEBINFO
+// builds.
+CUDA_NVCC_FLAGS_RELWITHDEBINFO:STRING=
+
+//Propagate C/CXX_FLAGS and friends to the host compiler via -Xcompile
+CUDA_PROPAGATE_HOST_FLAGS:BOOL=ON
+
+//Compile CUDA objects with separable compilation enabled.  Requires
+// CUDA 5.0+
+CUDA_SEPARABLE_COMPILATION:BOOL=OFF
+
+//Toolkit location.
+CUDA_TOOLKIT_ROOT_DIR:PATH=CUDA_TOOLKIT_ROOT_DIR-NOTFOUND
+
+//Print out the commands run while compiling the CUDA source file.
+//  With the Makefile generator this defaults to VERBOSE variable
+// specified on the command line, but can be forced on with this
+// option.
+CUDA_VERBOSE_BUILD:BOOL=OFF
+
 //Path to a program.
 DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
 
@@ -305,6 +360,9 @@ EMPY_EXECUTABLE:FILEPATH=EMPY_EXECUTABLE-NOTFOUND
 
 //Empy script
 EMPY_SCRIPT:STRING=/usr/lib/python3/dist-packages/em.py
+
+//The directory containing a CMake configuration file for Eigen3.
+Eigen3_DIR:PATH=/usr/lib/cmake/eigen3
 
 //Path to a library.
 GMOCK_LIBRARY:FILEPATH=GMOCK_LIBRARY-NOTFOUND
@@ -353,7 +411,7 @@ LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 NOSETESTS:FILEPATH=/usr/bin/nosetests3
 
 //The directory containing a CMake configuration file for OpenCV.
-OpenCV_DIR:PATH=OpenCV_DIR-NOTFOUND
+OpenCV_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/opencv4
 
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python3
@@ -400,8 +458,32 @@ _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
 
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/noetic/share/class_loader/cmake
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/noetic/share/cpp_common/cmake
+
+//The directory containing a CMake configuration file for gencpp.
+gencpp_DIR:PATH=/opt/ros/noetic/share/gencpp/cmake
+
+//The directory containing a CMake configuration file for geneus.
+geneus_DIR:PATH=/opt/ros/noetic/share/geneus/cmake
+
+//The directory containing a CMake configuration file for genlisp.
+genlisp_DIR:PATH=/opt/ros/noetic/share/genlisp/cmake
+
+//The directory containing a CMake configuration file for genmsg.
+genmsg_DIR:PATH=/opt/ros/noetic/share/genmsg/cmake
+
+//The directory containing a CMake configuration file for gennodejs.
+gennodejs_DIR:PATH=/opt/ros/noetic/share/gennodejs/cmake
+
+//The directory containing a CMake configuration file for genpy.
+genpy_DIR:PATH=/opt/ros/noetic/share/genpy/cmake
+
+//The directory containing a CMake configuration file for geometry_msgs.
+geometry_msgs_DIR:PATH=/opt/ros/noetic/share/geometry_msgs/cmake
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build/gtest/googlemock
@@ -449,8 +531,17 @@ gtest_hide_internal_symbols:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
+//The directory containing a CMake configuration file for image_transport.
+image_transport_DIR:PATH=/opt/ros/noetic/share/image_transport/cmake
+
 //Path to a library.
-lib:FILEPATH=/opt/ros/noetic/lib/libxmlrpcpp.so
+lib:FILEPATH=/opt/ros/noetic/lib/libtopic_tools.so
+
+//The directory containing a CMake configuration file for message_filters.
+message_filters_DIR:PATH=/opt/ros/noetic/share/message_filters/cmake
+
+//The directory containing a CMake configuration file for message_generation.
+message_generation_DIR:PATH=/opt/ros/noetic/share/message_generation/cmake
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/noetic/share/message_runtime/cmake
@@ -460,6 +551,21 @@ opencv_learn_BINARY_DIR:STATIC=/home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws
 
 //Value Computed by CMake
 opencv_learn_SOURCE_DIR:STATIC=/home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/src/opencv_learn
+
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/noetic/share/pluginlib/cmake
+
+//Value Computed by CMake
+ros_learn_BINARY_DIR:STATIC=/home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build/ros_learn
+
+//Value Computed by CMake
+ros_learn_SOURCE_DIR:STATIC=/home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/src/ros_learn
+
+//The directory containing a CMake configuration file for rosbag.
+rosbag_DIR:PATH=/opt/ros/noetic/share/rosbag/cmake
+
+//The directory containing a CMake configuration file for rosbag_storage.
+rosbag_storage_DIR:PATH=/opt/ros/noetic/share/rosbag_storage/cmake
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/noetic/share/rosconsole/cmake
@@ -476,20 +582,32 @@ roscpp_traits_DIR:PATH=/opt/ros/noetic/share/roscpp_traits/cmake
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/noetic/share/rosgraph_msgs/cmake
 
+//The directory containing a CMake configuration file for roslib.
+roslib_DIR:PATH=/opt/ros/noetic/share/roslib/cmake
+
+//The directory containing a CMake configuration file for roslz4.
+roslz4_DIR:PATH=/opt/ros/noetic/share/roslz4/cmake
+
+//The directory containing a CMake configuration file for rospack.
+rospack_DIR:PATH=/opt/ros/noetic/share/rospack/cmake
+
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/noetic/share/rospy/cmake
 
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/noetic/share/rostime/cmake
 
-//Value Computed by CMake
-socket_learn_BINARY_DIR:STATIC=/home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build/socket_learn
-
-//Value Computed by CMake
-socket_learn_SOURCE_DIR:STATIC=/home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/src/socket_learn
+//The directory containing a CMake configuration file for sensor_msgs.
+sensor_msgs_DIR:PATH=/opt/ros/noetic/share/sensor_msgs/cmake
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/noetic/share/std_msgs/cmake
+
+//The directory containing a CMake configuration file for std_srvs.
+std_srvs_DIR:PATH=/opt/ros/noetic/share/std_srvs/cmake
+
+//The directory containing a CMake configuration file for topic_tools.
+topic_tools_DIR:PATH=/opt/ros/noetic/share/topic_tools/cmake
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/noetic/share/xmlrpcpp/cmake
@@ -642,7 +760,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -685,6 +803,36 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_64_BIT_DEVICE_CODE
+CUDA_64_BIT_DEVICE_CODE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_ATTACH_VS_BUILD_RULE_TO_CUDA_FILE
+CUDA_ATTACH_VS_BUILD_RULE_TO_CUDA_FILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_BUILD_CUBIN
+CUDA_BUILD_CUBIN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_BUILD_EMULATION
+CUDA_BUILD_EMULATION-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_GENERATED_OUTPUT_DIR
+CUDA_GENERATED_OUTPUT_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_HOST_COMPILATION_CPP
+CUDA_HOST_COMPILATION_CPP-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_NVCC_FLAGS
+CUDA_NVCC_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_NVCC_FLAGS_DEBUG
+CUDA_NVCC_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_NVCC_FLAGS_MINSIZEREL
+CUDA_NVCC_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_NVCC_FLAGS_RELEASE
+CUDA_NVCC_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_NVCC_FLAGS_RELWITHDEBINFO
+CUDA_NVCC_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_PROPAGATE_HOST_FLAGS
+CUDA_PROPAGATE_HOST_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_SEPARABLE_COMPILATION
+CUDA_SEPARABLE_COMPILATION-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_VERBOSE_BUILD
+CUDA_VERBOSE_BUILD-ADVANCED:INTERNAL=1
+//Details about finding OpenCV
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][v4.2.0(4.2)]
 //Details about finding PY_em
 FIND_PACKAGE_MESSAGE_DETAILS_PY_em:INTERNAL=[/usr/lib/python3/dist-packages/em.py][v()]
 //Details about finding PythonInterp

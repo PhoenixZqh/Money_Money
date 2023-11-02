@@ -56,6 +56,52 @@ CMAKE_BINARY_DIR = /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -89,52 +135,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build/CMakeFiles /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build/socket_learn/CMakeFiles/progress.marks
@@ -167,443 +167,19 @@ depend:
 	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-socket_learn/CMakeFiles/tcp_client.dir/rule:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/tcp_client.dir/rule
-.PHONY : socket_learn/CMakeFiles/tcp_client.dir/rule
-
-# Convenience name for target.
-tcp_client: socket_learn/CMakeFiles/tcp_client.dir/rule
-
-.PHONY : tcp_client
-
-# fast build rule for target.
-tcp_client/fast:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/tcp_client.dir/build.make socket_learn/CMakeFiles/tcp_client.dir/build
-.PHONY : tcp_client/fast
-
-# Convenience name for target.
-socket_learn/CMakeFiles/udp_client.dir/rule:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/udp_client.dir/rule
-.PHONY : socket_learn/CMakeFiles/udp_client.dir/rule
-
-# Convenience name for target.
-udp_client: socket_learn/CMakeFiles/udp_client.dir/rule
-
-.PHONY : udp_client
-
-# fast build rule for target.
-udp_client/fast:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/udp_client.dir/build.make socket_learn/CMakeFiles/udp_client.dir/build
-.PHONY : udp_client/fast
-
-# Convenience name for target.
-socket_learn/CMakeFiles/udp_server.dir/rule:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/udp_server.dir/rule
-.PHONY : socket_learn/CMakeFiles/udp_server.dir/rule
-
-# Convenience name for target.
-udp_server: socket_learn/CMakeFiles/udp_server.dir/rule
-
-.PHONY : udp_server
-
-# fast build rule for target.
-udp_server/fast:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/udp_server.dir/build.make socket_learn/CMakeFiles/udp_server.dir/build
-.PHONY : udp_server/fast
-
-# Convenience name for target.
-socket_learn/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : socket_learn/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: socket_learn/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/std_msgs_generate_messages_py.dir/build.make socket_learn/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-socket_learn/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : socket_learn/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: socket_learn/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make socket_learn/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-socket_learn/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : socket_learn/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: socket_learn/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make socket_learn/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-# Convenience name for target.
-socket_learn/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-.PHONY : socket_learn/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_eus: socket_learn/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-.PHONY : roscpp_generate_messages_eus
-
-# fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/roscpp_generate_messages_eus.dir/build.make socket_learn/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
-
-# Convenience name for target.
-socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-.PHONY : socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-socket_learn/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : socket_learn/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: socket_learn/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make socket_learn/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-socket_learn/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : socket_learn/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: socket_learn/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/roscpp_generate_messages_py.dir/build.make socket_learn/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-socket_learn/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : socket_learn/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: socket_learn/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make socket_learn/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-socket_learn/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-.PHONY : socket_learn/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_nodejs: socket_learn/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-.PHONY : roscpp_generate_messages_nodejs
-
-# fast build rule for target.
-roscpp_generate_messages_nodejs/fast:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make socket_learn/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-.PHONY : roscpp_generate_messages_nodejs/fast
-
-# Convenience name for target.
-socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-socket_learn/CMakeFiles/tcp_server.dir/rule:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/tcp_server.dir/rule
-.PHONY : socket_learn/CMakeFiles/tcp_server.dir/rule
-
-# Convenience name for target.
-tcp_server: socket_learn/CMakeFiles/tcp_server.dir/rule
-
-.PHONY : tcp_server
-
-# fast build rule for target.
-tcp_server/fast:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/tcp_server.dir/build.make socket_learn/CMakeFiles/tcp_server.dir/build
-.PHONY : tcp_server/fast
-
-# Convenience name for target.
-socket_learn/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : socket_learn/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: socket_learn/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make socket_learn/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-socket_learn/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : socket_learn/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: socket_learn/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make socket_learn/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-# Convenience name for target.
-socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make socket_learn/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-src/tcp_client.o: src/tcp_client.cpp.o
-
-.PHONY : src/tcp_client.o
-
-# target to build an object file
-src/tcp_client.cpp.o:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/tcp_client.dir/build.make socket_learn/CMakeFiles/tcp_client.dir/src/tcp_client.cpp.o
-.PHONY : src/tcp_client.cpp.o
-
-src/tcp_client.i: src/tcp_client.cpp.i
-
-.PHONY : src/tcp_client.i
-
-# target to preprocess a source file
-src/tcp_client.cpp.i:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/tcp_client.dir/build.make socket_learn/CMakeFiles/tcp_client.dir/src/tcp_client.cpp.i
-.PHONY : src/tcp_client.cpp.i
-
-src/tcp_client.s: src/tcp_client.cpp.s
-
-.PHONY : src/tcp_client.s
-
-# target to generate assembly for a file
-src/tcp_client.cpp.s:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/tcp_client.dir/build.make socket_learn/CMakeFiles/tcp_client.dir/src/tcp_client.cpp.s
-.PHONY : src/tcp_client.cpp.s
-
-src/tcp_server.o: src/tcp_server.cpp.o
-
-.PHONY : src/tcp_server.o
-
-# target to build an object file
-src/tcp_server.cpp.o:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/tcp_server.dir/build.make socket_learn/CMakeFiles/tcp_server.dir/src/tcp_server.cpp.o
-.PHONY : src/tcp_server.cpp.o
-
-src/tcp_server.i: src/tcp_server.cpp.i
-
-.PHONY : src/tcp_server.i
-
-# target to preprocess a source file
-src/tcp_server.cpp.i:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/tcp_server.dir/build.make socket_learn/CMakeFiles/tcp_server.dir/src/tcp_server.cpp.i
-.PHONY : src/tcp_server.cpp.i
-
-src/tcp_server.s: src/tcp_server.cpp.s
-
-.PHONY : src/tcp_server.s
-
-# target to generate assembly for a file
-src/tcp_server.cpp.s:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/tcp_server.dir/build.make socket_learn/CMakeFiles/tcp_server.dir/src/tcp_server.cpp.s
-.PHONY : src/tcp_server.cpp.s
-
-src/udp_client.o: src/udp_client.cpp.o
-
-.PHONY : src/udp_client.o
-
-# target to build an object file
-src/udp_client.cpp.o:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/udp_client.dir/build.make socket_learn/CMakeFiles/udp_client.dir/src/udp_client.cpp.o
-.PHONY : src/udp_client.cpp.o
-
-src/udp_client.i: src/udp_client.cpp.i
-
-.PHONY : src/udp_client.i
-
-# target to preprocess a source file
-src/udp_client.cpp.i:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/udp_client.dir/build.make socket_learn/CMakeFiles/udp_client.dir/src/udp_client.cpp.i
-.PHONY : src/udp_client.cpp.i
-
-src/udp_client.s: src/udp_client.cpp.s
-
-.PHONY : src/udp_client.s
-
-# target to generate assembly for a file
-src/udp_client.cpp.s:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/udp_client.dir/build.make socket_learn/CMakeFiles/udp_client.dir/src/udp_client.cpp.s
-.PHONY : src/udp_client.cpp.s
-
-src/udp_server.o: src/udp_server.cpp.o
-
-.PHONY : src/udp_server.o
-
-# target to build an object file
-src/udp_server.cpp.o:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/udp_server.dir/build.make socket_learn/CMakeFiles/udp_server.dir/src/udp_server.cpp.o
-.PHONY : src/udp_server.cpp.o
-
-src/udp_server.i: src/udp_server.cpp.i
-
-.PHONY : src/udp_server.i
-
-# target to preprocess a source file
-src/udp_server.cpp.i:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/udp_server.dir/build.make socket_learn/CMakeFiles/udp_server.dir/src/udp_server.cpp.i
-.PHONY : src/udp_server.cpp.i
-
-src/udp_server.s: src/udp_server.cpp.s
-
-.PHONY : src/udp_server.s
-
-# target to generate assembly for a file
-src/udp_server.cpp.s:
-	cd /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) -f socket_learn/CMakeFiles/udp_server.dir/build.make socket_learn/CMakeFiles/udp_server.dir/src/udp_server.cpp.s
-.PHONY : src/udp_server.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
+	@echo "... install/local"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... install/local"
-	@echo "... tcp_client"
-	@echo "... udp_client"
-	@echo "... udp_server"
-	@echo "... std_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_eus"
-	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... list_install_components"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... install"
-	@echo "... std_msgs_generate_messages_eus"
-	@echo "... roscpp_generate_messages_nodejs"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... install/strip"
-	@echo "... tcp_server"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... src/tcp_client.o"
-	@echo "... src/tcp_client.i"
-	@echo "... src/tcp_client.s"
-	@echo "... src/tcp_server.o"
-	@echo "... src/tcp_server.i"
-	@echo "... src/tcp_server.s"
-	@echo "... src/udp_client.o"
-	@echo "... src/udp_client.i"
-	@echo "... src/udp_client.s"
-	@echo "... src/udp_server.o"
-	@echo "... src/udp_server.i"
-	@echo "... src/udp_server.s"
 .PHONY : help
 
 

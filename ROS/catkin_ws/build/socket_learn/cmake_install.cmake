@@ -37,18 +37,3 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build/socket_learn/catkin_generated/installspace/socket_learn.pc")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/socket_learn/cmake" TYPE FILE FILES
-    "/home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build/socket_learn/catkin_generated/installspace/socket_learnConfig.cmake"
-    "/home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/build/socket_learn/catkin_generated/installspace/socket_learnConfig-version.cmake"
-    )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/socket_learn" TYPE FILE FILES "/home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/src/socket_learn/package.xml")
-endif()
-

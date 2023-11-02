@@ -11,14 +11,14 @@ using namespace std;
 using namespace std::placeholders;
 
 class Animal {
-private:
-    string m_name;
-    string m_bark;
+ private:
+  string m_name;
+  string m_bark;
 
-public:
-    Animal();
-    virtual ~Animal();
+ public:
+  Animal();
+  virtual ~Animal();
 
-protected:
-    Animal();
+ protected:
+  Animal();
 };
