@@ -1,4 +1,4 @@
-prefix=/home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/install
+prefix=/home/GitHub/Money_Money/ROS/catkin_ws/install
 
 Name: ros_learn
 Description: Description of ros_learn

@@ -25,7 +25,7 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 find_package(Eigen3 REQUIRED)
-find_package(OpenCV 4.2 REQUIRED )
+find_package(OpenCV 4.7 REQUIRED )
 # find_package(CUDA REQUIRED)
 
 

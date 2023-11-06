@@ -1,8 +1,8 @@
-# Install script for directory: /home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/src/test_rtsp
+# Install script for directory: /home/GitHub/Money_Money/ROS/catkin_ws/src/test_rtsp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zqh/文档/GitHub/Money_Money/ROS/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/GitHub/Money_Money/ROS/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -35,5 +35,10 @@ endif()
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
