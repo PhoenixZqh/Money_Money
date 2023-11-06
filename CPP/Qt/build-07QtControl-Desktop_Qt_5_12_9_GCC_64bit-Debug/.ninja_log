@@ -1,7 +1,0 @@
-# ninja log v5
-0	80	0	CMakeFiles/07QtControl_autogen	4e01b1ef93c5e26c
-0	80	0	07QtControl_autogen/mocs_compilation.cpp	4e01b1ef93c5e26c
-80	623	1670296918560741269	CMakeFiles/07QtControl.dir/07QtControl_autogen/mocs_compilation.cpp.o	c0fa9e50669be44d
-81	655	1670296918592741288	CMakeFiles/07QtControl.dir/main.cpp.o	751581e893fb4eff
-81	718	1670296918652741323	CMakeFiles/07QtControl.dir/mainwindow.cpp.o	8158c5acff6fe8e4
-718	865	1670296918800741411	07QtControl	af8e391d29d57d96

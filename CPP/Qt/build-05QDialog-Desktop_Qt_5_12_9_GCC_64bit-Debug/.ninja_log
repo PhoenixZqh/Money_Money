@@ -1,7 +1,0 @@
-# ninja log v5
-0	69	0	CMakeFiles/05QDialog_autogen	7f49d3b15239435c
-0	69	0	05QDialog_autogen/mocs_compilation.cpp	7f49d3b15239435c
-69	530	1670296869664719960	CMakeFiles/05QDialog.dir/05QDialog_autogen/mocs_compilation.cpp.o	cb528e504c8f1c09
-69	541	1670296869672719962	CMakeFiles/05QDialog.dir/main.cpp.o	7425205e7101f0c9
-69	573	1670296869704719971	CMakeFiles/05QDialog.dir/mainwindow.cpp.o	9a29e17c19763a1
-573	709	1670296869840720008	05QDialog	69f58e8ff9aa62a2
