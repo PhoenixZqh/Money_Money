@@ -78,7 +78,8 @@
         "variant": "cpp",
         "bit": "cpp",
         "charconv": "cpp",
-        "netfwd": "cpp"
+        "netfwd": "cpp",
+        "*.ipp": "cpp"
     },
     "cmake.sourceDirectory": "/home/zqh/文档/GitHub/Money_Money/CPP/Qt/TestCoinFlip"
 }

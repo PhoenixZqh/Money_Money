@@ -8,37 +8,40 @@ using namespace std;
 
 int b, c, d;
 
-void TestSwitch(int a) {
-  switch (a) {
+void TestSwitch(int a)
+{
+    switch (a)
+    {
     case 1: {
-      b = 1;
-      break;
+        b =  1;
+        break;
     }
 
     case 2: {
-      c = 2;
-      break;
+        c = 2;
+        break;
     }
 
     case 3: {
-      d = 3;
-      break;
+        d = 3;
+        break;
     }
 
     default:
-      break;
-  }
+        break;
+    }
 
-  cout << "b: " << b << "\t"
-       << "c: " << c << "\t"
-       << "d: " << d << endl;
+    cout << "b: " << b << "\t"
+         << "c: " << c << "\t"
+         << "d: " << d << endl;
 }
 
-int main() {
-  int tmp;
-  cout << "请输入数值" << endl;
-  cin >> tmp;
+int main()
+{
+    int tmp;
+    cout << "请输入数值" << endl;
+    cin >> tmp;
 
-  TestSwitch(tmp);
-  return 0;
+    TestSwitch(tmp);
+    return 0;
 }
