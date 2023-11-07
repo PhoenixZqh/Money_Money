@@ -1,7 +1,0 @@
-com.sh
-bazel-CPlusPlusThings
-bazel-bin
-bazel-out
-bazel-testlogs
-bazel-cplusplus_bazel
-.vscode
