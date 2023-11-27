@@ -1,18 +1,19 @@
 #include <algorithm>
 #include <iostream>
 #include <opencv2/opencv.hpp>
+#include <fstream> // Make sure this line is included
 
 using namespace std;
 int main(int argc, char **argv)
 {
-    string dir = "/home/zqh/pic/";                 // 标定图片所在文件夹
+    string dir = "/home/data/PIC5B0/";             // 标定图片所在文件夹
     ofstream fout(dir + "calibration_result.txt"); // 输出结果保存在此文本文件下
     // 依次读取每一幅图片，从中提取角点
     cout << "开始提取角点……" << endl;
-    int image_nums = 0;      // 图片数量
-    cv::Size image_size;     // 图片尺寸
-    int points_per_row = 11; // 每行的内点数
-    int points_per_col = 8;  // 每列的内点数
+    int image_nums = 0;     // 图片数量
+    cv::Size image_size;    // 图片尺寸
+    int points_per_row = 6; // 每行的内点数
+    int points_per_col = 6; // 每列的内点数
     cv::Size corner_size = cv::Size(
         points_per_row, points_per_col);  // 标定板每行每列角点个数，共10*7个角点
     vector<cv::Point2f> points_per_image; // 缓存每幅图检测到的角点
@@ -47,12 +48,13 @@ int main(int argc, char **argv)
                      cv::COLOR_BGR2GRAY); // 将BGR图转化为灰度图
         // cout<<"image_gray.type() = "<<image_gray.type()<<endl;  //CV_8UC1
         // step1 提取角点
-        bool success =
-            cv::findChessboardCorners(image_gray, corner_size, points_per_image);
+        bool success = cv::findChessboardCorners(image_gray, corner_size, points_per_image);
+        // bool success = cv::findChessboardCorners(image_gray, corner_size, points_per_image, cv::CALIB_CB_ADAPTIVE_THRESH | cv::CALIB_CB_FAST_CHECK | cv::CALIB_CB_NORMALIZE_IMAGE);
+
         if (!success)
         {
             cout << "can not find the corners " << endl;
-            exit(1);
+            // exit(1);
         }
         else
         {
@@ -75,8 +77,7 @@ int main(int argc, char **argv)
     cout << "image_sum_nums = " << image_sum_nums << endl;
 
     // 开始相机标定
-    cv::Size block_size(60,
-                        60);                                // 每个小方格实际大小, 只会影响最后求解的平移向量t
+    cv::Size block_size(50, 50);                            // 每个小方格实际大小, 只会影响最后求解的平移向量t
     cv::Mat camera_K(3, 3, CV_32FC1, cv::Scalar::all(0));   // 内参矩阵3*3
     cv::Mat distCoeffs(1, 5, CV_32FC1, cv::Scalar::all(0)); // 畸变矩阵1*5
     vector<cv::Mat> rotationMat;                            // 旋转矩阵

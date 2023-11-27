@@ -6,7 +6,7 @@ set(CMAKE_CXX_FLAGS "-std=c++11 -fPIC")
 SET(CMAKE_BUILD_TYPE "Release")
 SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O2 -Wall -fopenmp")
 
-find_package(OpenCV 4.2 REQUIRED )
+find_package(OpenCV 4.5 REQUIRED )
 
 
 include_directories(

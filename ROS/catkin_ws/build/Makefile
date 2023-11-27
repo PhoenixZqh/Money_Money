@@ -951,6 +951,45 @@ get_cali/fast:
 	$(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/get_cali.dir/build.make ros_learn/CMakeFiles/get_cali.dir/build
 .PHONY : get_cali/fast
 
+#=============================================================================
+# Target rules for targets named ffmpeg_cpu
+
+# Build rule for target.
+ffmpeg_cpu: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ffmpeg_cpu
+.PHONY : ffmpeg_cpu
+
+# fast build rule for target.
+ffmpeg_cpu/fast:
+	$(MAKE) $(MAKESILENT) -f test_rtsp/CMakeFiles/ffmpeg_cpu.dir/build.make test_rtsp/CMakeFiles/ffmpeg_cpu.dir/build
+.PHONY : ffmpeg_cpu/fast
+
+#=============================================================================
+# Target rules for targets named ffmpeg_opencv_rtsp
+
+# Build rule for target.
+ffmpeg_opencv_rtsp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ffmpeg_opencv_rtsp
+.PHONY : ffmpeg_opencv_rtsp
+
+# fast build rule for target.
+ffmpeg_opencv_rtsp/fast:
+	$(MAKE) $(MAKESILENT) -f test_rtsp/CMakeFiles/ffmpeg_opencv_rtsp.dir/build.make test_rtsp/CMakeFiles/ffmpeg_opencv_rtsp.dir/build
+.PHONY : ffmpeg_opencv_rtsp/fast
+
+#=============================================================================
+# Target rules for targets named gst_opencv
+
+# Build rule for target.
+gst_opencv: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gst_opencv
+.PHONY : gst_opencv
+
+# fast build rule for target.
+gst_opencv/fast:
+	$(MAKE) $(MAKESILENT) -f test_rtsp/CMakeFiles/gst_opencv.dir/build.make test_rtsp/CMakeFiles/gst_opencv.dir/build
+.PHONY : gst_opencv/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1016,9 +1055,12 @@ help:
 	@echo "... topic_tools_generate_messages_lisp"
 	@echo "... topic_tools_generate_messages_nodejs"
 	@echo "... topic_tools_generate_messages_py"
+	@echo "... ffmpeg_cpu"
+	@echo "... ffmpeg_opencv_rtsp"
 	@echo "... get_cali"
 	@echo "... gmock"
 	@echo "... gmock_main"
+	@echo "... gst_opencv"
 	@echo "... gstreamer_rtsp"
 	@echo "... gtest"
 	@echo "... gtest_main"

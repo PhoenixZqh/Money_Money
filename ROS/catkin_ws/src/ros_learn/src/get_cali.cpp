@@ -11,67 +11,73 @@
 
 using namespace std;
 using namespace cv;
-int scanKeyboard() {
-  int in;
-  struct termios new_settings;
-  struct termios stored_settings;
-  tcgetattr(0, &stored_settings);
-  new_settings = stored_settings;
-  new_settings.c_lflag &= (~ICANON);
-  new_settings.c_cc[VTIME] = 0;
-  tcgetattr(0, &stored_settings);
-  new_settings.c_cc[VMIN] = 1;
-  tcsetattr(0, TCSANOW, &new_settings);
+int scanKeyboard()
+{
+    int in;
+    struct termios new_settings;
+    struct termios stored_settings;
+    tcgetattr(0, &stored_settings);
+    new_settings = stored_settings;
+    new_settings.c_lflag &= (~ICANON);
+    new_settings.c_cc[VTIME] = 0;
+    tcgetattr(0, &stored_settings);
+    new_settings.c_cc[VMIN] = 1;
+    tcsetattr(0, TCSANOW, &new_settings);
 
-  in = getchar();
+    in = getchar();
 
-  tcsetattr(0, TCSANOW, &stored_settings);
-  return in;
+    tcsetattr(0, TCSANOW, &stored_settings);
+    return in;
 }
 
-int main(int argc, char** argv) {
-  ros::init(argc, argv, "gimbal_camera");
-  ros::NodeHandle nh;
+int main(int argc, char **argv)
+{
+    ros::init(argc, argv, "gimbal_camera");
+    ros::NodeHandle nh;
 
-  //   std::string pipline_str = "rtsp://192.168.42.10/livestream/12";
-  std::string pipline_str = "/home/zqh/2.mp4";
+    //   std::string pipline_str = "rtsp://192.168.42.10/livestream/12";
+    std::string pipline_str = "/home/data/5B0.MP4";
 
-  cv::VideoCapture cap(pipline_str);
+    cv::VideoCapture cap(pipline_str);
 
-  if (!cap.isOpened()) {
-    std::cout << "CAN NOT OPEN CAMERA" << std::endl;
-  }
-
-  int index = 0;
-  cv::Mat frame;
-
-  while (ros::ok()) {
-    cap >> frame;
-
-    if (frame.empty()) {
-      std::cout << "img empty!!" << std::endl;
-      // break;
-      continue;
+    if (!cap.isOpened())
+    {
+        std::cout << "CAN NOT OPEN CAMERA" << std::endl;
     }
 
-    // int ascii = scanKeyboard();
-    cv::imshow("sss", frame);
-    char key_value = cv::waitKey(50);
+    int index = 0;
+    cv::Mat frame;
 
-    if (key_value == 's') {
-      index++;
-      string img_name = "/home/zqh/pic/" + to_string(index) + ".png";
+    while (ros::ok())
+    {
+        cap >> frame;
 
-      imwrite(img_name, frame);
-      cout << "成功保存一张:" << index << endl;
+        if (frame.empty())
+        {
+            std::cout << "img empty!!" << std::endl;
+            // break;
+            continue;
+        }
+
+        // int ascii = scanKeyboard();
+        cv::imshow("sss", frame);
+        char key_value = cv::waitKey(30);
+
+        if (key_value == 's')
+        {
+            index++;
+            string img_name = "/home/data/PIC5B0/" + to_string(index) + ".png";
+
+            imwrite(img_name, frame);
+            cout << "成功保存一张:" << index << endl;
+        }
+
+        // else if (ascii == 27) { // ESC
+        //   break;
+        // }
     }
 
-    // else if (ascii == 27) { // ESC
-    //   break;
-    // }
-  }
-
-  return 0;
+    return 0;
 }
 
 // int main()
