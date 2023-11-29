@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/grid_block_size.dir/src/grid_block_size_generated_grid_block_size.cu.o  -o /home/zqh/PhoenixZ/Money_Cuda_TensorRT/learning_ws/devel/lib/cudaStudy/grid_block_size   -L/usr/local/lib  -L/usr/local/cuda/lib64  -Wl,-rpath,/usr/local/lib:/usr/local/cuda/lib64 /usr/local/cuda/lib64/libcudart_static.a -lpthread -ldl -lrt 

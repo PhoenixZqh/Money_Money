@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/blockIdx_Dim.dir/src/blockIdx_Dim_generated_blockIdx_Dim.cu.o  -o /home/zqh/PhoenixZ/Money_Cuda_TensorRT/learning_ws/devel/lib/cudaStudy/blockIdx_Dim   -L/usr/local/lib  -L/usr/local/cuda/lib64  -Wl,-rpath,/usr/local/lib:/usr/local/cuda/lib64 /usr/local/cuda/lib64/libcudart_static.a -lpthread -ldl -lrt 

@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/Scanning_parallel.dir/src/Scanning_parallel_generated_Scanning_parallel.cu.o  -o /home/zqh/PhoenixZ/Money_Cuda_TensorRT/learning_ws/devel/lib/cudaStudy/Scanning_parallel   -L/usr/local/lib  -L/usr/local/cuda/lib64  -Wl,-rpath,/usr/local/lib:/usr/local/cuda/lib64 /usr/local/cuda/lib64/libcudart_static.a -lpthread -ldl -lrt -lcuda 

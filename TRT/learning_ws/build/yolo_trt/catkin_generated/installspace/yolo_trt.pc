@@ -1,8 +1,0 @@
-prefix=/home/zqh/PhoenixZ/Money_Cuda_TensorRT/learning_ws/install
-
-Name: yolo_trt
-Description: Description of yolo_trt
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
