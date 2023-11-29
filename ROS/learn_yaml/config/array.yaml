@@ -1,0 +1,7 @@
+%YAML:1.0
+---
+Student:
+   name: james
+   age: 18
+   score: 9.9099999999999994e+01
+   arr: [1,3,5]

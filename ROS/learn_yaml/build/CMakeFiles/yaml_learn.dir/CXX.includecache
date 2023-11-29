@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/yaml_learn.h
+iostream
+-
+yaml-cpp/yaml.h
+-
+
+/home/zqh/文档/Money_Money/ROS/learn_yaml/src/yaml_learn_node.cpp
+yaml_learn.h
+-
+yaml-cpp/yaml.h
+-
+memory
+-
+
