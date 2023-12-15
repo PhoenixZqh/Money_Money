@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/GitHub/Money_Money/ROS/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/Money_Money/ROS/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/GitHub/Money_Money/ROS/catkin_ws/build
+CMAKE_BINARY_DIR = /home/Money_Money/ROS/catkin_ws/build
 
 # Utility rule file for tests.
 
@@ -78,6 +78,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/GitHub/Money_Money/ROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/GitHub/Money_Money/ROS/catkin_ws/src /home/GitHub/Money_Money/ROS/catkin_ws/src /home/GitHub/Money_Money/ROS/catkin_ws/build /home/GitHub/Money_Money/ROS/catkin_ws/build /home/GitHub/Money_Money/ROS/catkin_ws/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/Money_Money/ROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/Money_Money/ROS/catkin_ws/src /home/Money_Money/ROS/catkin_ws/src /home/Money_Money/ROS/catkin_ws/build /home/Money_Money/ROS/catkin_ws/build /home/Money_Money/ROS/catkin_ws/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 

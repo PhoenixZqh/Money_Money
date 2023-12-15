@@ -36,7 +36,7 @@ int main(int argc, char **argv)
     ros::NodeHandle nh;
 
     //   std::string pipline_str = "rtsp://192.168.42.10/livestream/12";
-    std::string pipline_str = "/home/data/5B0.MP4";
+    std::string pipline_str = "/home/data-jinshan/NORM0004.MP4";
 
     cv::VideoCapture cap(pipline_str);
 
@@ -61,12 +61,12 @@ int main(int argc, char **argv)
 
         // int ascii = scanKeyboard();
         cv::imshow("sss", frame);
-        char key_value = cv::waitKey(30);
+        char key_value = cv::waitKey(10);
 
         if (key_value == 's')
         {
             index++;
-            string img_name = "/home/data/PIC5B0/" + to_string(index) + ".png";
+            string img_name = "/home/data-jinshan/pic_no3/" + to_string(index) + ".png";
 
             imwrite(img_name, frame);
             cout << "成功保存一张:" << index << endl;

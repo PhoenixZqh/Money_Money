@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/GitHub/Money_Money/ROS/catkin_ws/devel/include/ros_learn/add.h"
+  "/home/Money_Money/ROS/catkin_ws/devel/include/ros_learn/add.h"
   "CMakeFiles/ros_learn_generate_messages_cpp"
 )
 

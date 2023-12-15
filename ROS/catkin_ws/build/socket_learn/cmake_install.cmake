@@ -1,8 +1,8 @@
-# Install script for directory: /home/GitHub/Money_Money/ROS/catkin_ws/src/socket_learn
+# Install script for directory: /home/Money_Money/ROS/catkin_ws/src/socket_learn
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/GitHub/Money_Money/ROS/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/Money_Money/ROS/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,20 @@ endif()
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/Money_Money/ROS/catkin_ws/build/socket_learn/catkin_generated/installspace/socket_learn.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/socket_learn/cmake" TYPE FILE FILES
+    "/home/Money_Money/ROS/catkin_ws/build/socket_learn/catkin_generated/installspace/socket_learnConfig.cmake"
+    "/home/Money_Money/ROS/catkin_ws/build/socket_learn/catkin_generated/installspace/socket_learnConfig-version.cmake"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/socket_learn" TYPE FILE FILES "/home/Money_Money/ROS/catkin_ws/src/socket_learn/package.xml")
 endif()
 

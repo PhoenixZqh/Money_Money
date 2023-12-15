@@ -1,5 +1,5 @@
 ros_learn/CMakeFiles/opencv_push_rtsp.dir/src/opencv_push_rtsp.cpp.o: \
- /home/GitHub/Money_Money/ROS/catkin_ws/src/ros_learn/src/opencv_push_rtsp.cpp \
+ /home/Money_Money/ROS/catkin_ws/src/ros_learn/src/opencv_push_rtsp.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -136,4 +136,4 @@ ros_learn/CMakeFiles/opencv_push_rtsp.dir/src/opencv_push_rtsp.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
- /usr/local/opencv-4.7/include/opencv4/opencv2/opencv_modules.hpp
+ /usr/include/opencv4/opencv2/opencv_modules.hpp

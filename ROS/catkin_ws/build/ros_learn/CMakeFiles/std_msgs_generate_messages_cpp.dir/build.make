@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/GitHub/Money_Money/ROS/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/Money_Money/ROS/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/GitHub/Money_Money/ROS/catkin_ws/build
+CMAKE_BINARY_DIR = /home/Money_Money/ROS/catkin_ws/build
 
 # Utility rule file for std_msgs_generate_messages_cpp.
 
@@ -74,10 +74,10 @@ ros_learn/CMakeFiles/std_msgs_generate_messages_cpp.dir/build: std_msgs_generate
 .PHONY : ros_learn/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 
 ros_learn/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	cd /home/GitHub/Money_Money/ROS/catkin_ws/build/ros_learn && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/Money_Money/ROS/catkin_ws/build/ros_learn && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : ros_learn/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 ros_learn/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend:
-	cd /home/GitHub/Money_Money/ROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/GitHub/Money_Money/ROS/catkin_ws/src /home/GitHub/Money_Money/ROS/catkin_ws/src/ros_learn /home/GitHub/Money_Money/ROS/catkin_ws/build /home/GitHub/Money_Money/ROS/catkin_ws/build/ros_learn /home/GitHub/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/Money_Money/ROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/Money_Money/ROS/catkin_ws/src /home/Money_Money/ROS/catkin_ws/src/ros_learn /home/Money_Money/ROS/catkin_ws/build /home/Money_Money/ROS/catkin_ws/build/ros_learn /home/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ros_learn/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 

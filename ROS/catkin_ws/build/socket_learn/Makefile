@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/GitHub/Money_Money/ROS/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/Money_Money/ROS/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/GitHub/Money_Money/ROS/catkin_ws/build
+CMAKE_BINARY_DIR = /home/Money_Money/ROS/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/GitHub/Money_Money/ROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/GitHub/Money_Money/ROS/catkin_ws/build/CMakeFiles /home/GitHub/Money_Money/ROS/catkin_ws/build/socket_learn//CMakeFiles/progress.marks
-	cd /home/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 socket_learn/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/GitHub/Money_Money/ROS/catkin_ws/build/CMakeFiles 0
+	cd /home/Money_Money/ROS/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/Money_Money/ROS/catkin_ws/build/CMakeFiles /home/Money_Money/ROS/catkin_ws/build/socket_learn//CMakeFiles/progress.marks
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 socket_learn/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/Money_Money/ROS/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 socket_learn/clean
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 socket_learn/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,18 +158,284 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 socket_learn/preinstall
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 socket_learn/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/GitHub/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 socket_learn/preinstall
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 socket_learn/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/GitHub/Money_Money/ROS/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/Money_Money/ROS/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+socket_learn/CMakeFiles/udp_server.dir/rule:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/udp_server.dir/rule
+.PHONY : socket_learn/CMakeFiles/udp_server.dir/rule
+
+# Convenience name for target.
+udp_server: socket_learn/CMakeFiles/udp_server.dir/rule
+.PHONY : udp_server
+
+# fast build rule for target.
+udp_server/fast:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/udp_server.dir/build.make socket_learn/CMakeFiles/udp_server.dir/build
+.PHONY : udp_server/fast
+
+# Convenience name for target.
+socket_learn/CMakeFiles/udp_client.dir/rule:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/udp_client.dir/rule
+.PHONY : socket_learn/CMakeFiles/udp_client.dir/rule
+
+# Convenience name for target.
+udp_client: socket_learn/CMakeFiles/udp_client.dir/rule
+.PHONY : udp_client
+
+# fast build rule for target.
+udp_client/fast:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/udp_client.dir/build.make socket_learn/CMakeFiles/udp_client.dir/build
+.PHONY : udp_client/fast
+
+# Convenience name for target.
+socket_learn/CMakeFiles/tcp_server.dir/rule:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/tcp_server.dir/rule
+.PHONY : socket_learn/CMakeFiles/tcp_server.dir/rule
+
+# Convenience name for target.
+tcp_server: socket_learn/CMakeFiles/tcp_server.dir/rule
+.PHONY : tcp_server
+
+# fast build rule for target.
+tcp_server/fast:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_server.dir/build.make socket_learn/CMakeFiles/tcp_server.dir/build
+.PHONY : tcp_server/fast
+
+# Convenience name for target.
+socket_learn/CMakeFiles/tcp_client.dir/rule:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/tcp_client.dir/rule
+.PHONY : socket_learn/CMakeFiles/tcp_client.dir/rule
+
+# Convenience name for target.
+tcp_client: socket_learn/CMakeFiles/tcp_client.dir/rule
+.PHONY : tcp_client
+
+# fast build rule for target.
+tcp_client/fast:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_client.dir/build.make socket_learn/CMakeFiles/tcp_client.dir/build
+.PHONY : tcp_client/fast
+
+# Convenience name for target.
+socket_learn/CMakeFiles/buffer.dir/rule:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/buffer.dir/rule
+.PHONY : socket_learn/CMakeFiles/buffer.dir/rule
+
+# Convenience name for target.
+buffer: socket_learn/CMakeFiles/buffer.dir/rule
+.PHONY : buffer
+
+# fast build rule for target.
+buffer/fast:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/buffer.dir/build.make socket_learn/CMakeFiles/buffer.dir/build
+.PHONY : buffer/fast
+
+# Convenience name for target.
+socket_learn/CMakeFiles/tcp_sub_buffer.dir/rule:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/tcp_sub_buffer.dir/rule
+.PHONY : socket_learn/CMakeFiles/tcp_sub_buffer.dir/rule
+
+# Convenience name for target.
+tcp_sub_buffer: socket_learn/CMakeFiles/tcp_sub_buffer.dir/rule
+.PHONY : tcp_sub_buffer
+
+# fast build rule for target.
+tcp_sub_buffer/fast:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_sub_buffer.dir/build.make socket_learn/CMakeFiles/tcp_sub_buffer.dir/build
+.PHONY : tcp_sub_buffer/fast
+
+# Convenience name for target.
+socket_learn/CMakeFiles/tcp_pub_buffer.dir/rule:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/tcp_pub_buffer.dir/rule
+.PHONY : socket_learn/CMakeFiles/tcp_pub_buffer.dir/rule
+
+# Convenience name for target.
+tcp_pub_buffer: socket_learn/CMakeFiles/tcp_pub_buffer.dir/rule
+.PHONY : tcp_pub_buffer
+
+# fast build rule for target.
+tcp_pub_buffer/fast:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_pub_buffer.dir/build.make socket_learn/CMakeFiles/tcp_pub_buffer.dir/build
+.PHONY : tcp_pub_buffer/fast
+
+src/buffer.o: src/buffer.cpp.o
+.PHONY : src/buffer.o
+
+# target to build an object file
+src/buffer.cpp.o:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/buffer.dir/build.make socket_learn/CMakeFiles/buffer.dir/src/buffer.cpp.o
+.PHONY : src/buffer.cpp.o
+
+src/buffer.i: src/buffer.cpp.i
+.PHONY : src/buffer.i
+
+# target to preprocess a source file
+src/buffer.cpp.i:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/buffer.dir/build.make socket_learn/CMakeFiles/buffer.dir/src/buffer.cpp.i
+.PHONY : src/buffer.cpp.i
+
+src/buffer.s: src/buffer.cpp.s
+.PHONY : src/buffer.s
+
+# target to generate assembly for a file
+src/buffer.cpp.s:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/buffer.dir/build.make socket_learn/CMakeFiles/buffer.dir/src/buffer.cpp.s
+.PHONY : src/buffer.cpp.s
+
+src/tcp_client.o: src/tcp_client.cpp.o
+.PHONY : src/tcp_client.o
+
+# target to build an object file
+src/tcp_client.cpp.o:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_client.dir/build.make socket_learn/CMakeFiles/tcp_client.dir/src/tcp_client.cpp.o
+.PHONY : src/tcp_client.cpp.o
+
+src/tcp_client.i: src/tcp_client.cpp.i
+.PHONY : src/tcp_client.i
+
+# target to preprocess a source file
+src/tcp_client.cpp.i:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_client.dir/build.make socket_learn/CMakeFiles/tcp_client.dir/src/tcp_client.cpp.i
+.PHONY : src/tcp_client.cpp.i
+
+src/tcp_client.s: src/tcp_client.cpp.s
+.PHONY : src/tcp_client.s
+
+# target to generate assembly for a file
+src/tcp_client.cpp.s:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_client.dir/build.make socket_learn/CMakeFiles/tcp_client.dir/src/tcp_client.cpp.s
+.PHONY : src/tcp_client.cpp.s
+
+src/tcp_pub_buffer.o: src/tcp_pub_buffer.cpp.o
+.PHONY : src/tcp_pub_buffer.o
+
+# target to build an object file
+src/tcp_pub_buffer.cpp.o:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_pub_buffer.dir/build.make socket_learn/CMakeFiles/tcp_pub_buffer.dir/src/tcp_pub_buffer.cpp.o
+.PHONY : src/tcp_pub_buffer.cpp.o
+
+src/tcp_pub_buffer.i: src/tcp_pub_buffer.cpp.i
+.PHONY : src/tcp_pub_buffer.i
+
+# target to preprocess a source file
+src/tcp_pub_buffer.cpp.i:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_pub_buffer.dir/build.make socket_learn/CMakeFiles/tcp_pub_buffer.dir/src/tcp_pub_buffer.cpp.i
+.PHONY : src/tcp_pub_buffer.cpp.i
+
+src/tcp_pub_buffer.s: src/tcp_pub_buffer.cpp.s
+.PHONY : src/tcp_pub_buffer.s
+
+# target to generate assembly for a file
+src/tcp_pub_buffer.cpp.s:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_pub_buffer.dir/build.make socket_learn/CMakeFiles/tcp_pub_buffer.dir/src/tcp_pub_buffer.cpp.s
+.PHONY : src/tcp_pub_buffer.cpp.s
+
+src/tcp_server.o: src/tcp_server.cpp.o
+.PHONY : src/tcp_server.o
+
+# target to build an object file
+src/tcp_server.cpp.o:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_server.dir/build.make socket_learn/CMakeFiles/tcp_server.dir/src/tcp_server.cpp.o
+.PHONY : src/tcp_server.cpp.o
+
+src/tcp_server.i: src/tcp_server.cpp.i
+.PHONY : src/tcp_server.i
+
+# target to preprocess a source file
+src/tcp_server.cpp.i:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_server.dir/build.make socket_learn/CMakeFiles/tcp_server.dir/src/tcp_server.cpp.i
+.PHONY : src/tcp_server.cpp.i
+
+src/tcp_server.s: src/tcp_server.cpp.s
+.PHONY : src/tcp_server.s
+
+# target to generate assembly for a file
+src/tcp_server.cpp.s:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_server.dir/build.make socket_learn/CMakeFiles/tcp_server.dir/src/tcp_server.cpp.s
+.PHONY : src/tcp_server.cpp.s
+
+src/tcp_sub_buffer.o: src/tcp_sub_buffer.cpp.o
+.PHONY : src/tcp_sub_buffer.o
+
+# target to build an object file
+src/tcp_sub_buffer.cpp.o:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_sub_buffer.dir/build.make socket_learn/CMakeFiles/tcp_sub_buffer.dir/src/tcp_sub_buffer.cpp.o
+.PHONY : src/tcp_sub_buffer.cpp.o
+
+src/tcp_sub_buffer.i: src/tcp_sub_buffer.cpp.i
+.PHONY : src/tcp_sub_buffer.i
+
+# target to preprocess a source file
+src/tcp_sub_buffer.cpp.i:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_sub_buffer.dir/build.make socket_learn/CMakeFiles/tcp_sub_buffer.dir/src/tcp_sub_buffer.cpp.i
+.PHONY : src/tcp_sub_buffer.cpp.i
+
+src/tcp_sub_buffer.s: src/tcp_sub_buffer.cpp.s
+.PHONY : src/tcp_sub_buffer.s
+
+# target to generate assembly for a file
+src/tcp_sub_buffer.cpp.s:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_sub_buffer.dir/build.make socket_learn/CMakeFiles/tcp_sub_buffer.dir/src/tcp_sub_buffer.cpp.s
+.PHONY : src/tcp_sub_buffer.cpp.s
+
+src/udp_client.o: src/udp_client.cpp.o
+.PHONY : src/udp_client.o
+
+# target to build an object file
+src/udp_client.cpp.o:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/udp_client.dir/build.make socket_learn/CMakeFiles/udp_client.dir/src/udp_client.cpp.o
+.PHONY : src/udp_client.cpp.o
+
+src/udp_client.i: src/udp_client.cpp.i
+.PHONY : src/udp_client.i
+
+# target to preprocess a source file
+src/udp_client.cpp.i:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/udp_client.dir/build.make socket_learn/CMakeFiles/udp_client.dir/src/udp_client.cpp.i
+.PHONY : src/udp_client.cpp.i
+
+src/udp_client.s: src/udp_client.cpp.s
+.PHONY : src/udp_client.s
+
+# target to generate assembly for a file
+src/udp_client.cpp.s:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/udp_client.dir/build.make socket_learn/CMakeFiles/udp_client.dir/src/udp_client.cpp.s
+.PHONY : src/udp_client.cpp.s
+
+src/udp_server.o: src/udp_server.cpp.o
+.PHONY : src/udp_server.o
+
+# target to build an object file
+src/udp_server.cpp.o:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/udp_server.dir/build.make socket_learn/CMakeFiles/udp_server.dir/src/udp_server.cpp.o
+.PHONY : src/udp_server.cpp.o
+
+src/udp_server.i: src/udp_server.cpp.i
+.PHONY : src/udp_server.i
+
+# target to preprocess a source file
+src/udp_server.cpp.i:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/udp_server.dir/build.make socket_learn/CMakeFiles/udp_server.dir/src/udp_server.cpp.i
+.PHONY : src/udp_server.cpp.i
+
+src/udp_server.s: src/udp_server.cpp.s
+.PHONY : src/udp_server.s
+
+# target to generate assembly for a file
+src/udp_server.cpp.s:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/udp_server.dir/build.make socket_learn/CMakeFiles/udp_server.dir/src/udp_server.cpp.s
+.PHONY : src/udp_server.cpp.s
 
 # Help Target
 help:
@@ -184,6 +450,34 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... buffer"
+	@echo "... tcp_client"
+	@echo "... tcp_pub_buffer"
+	@echo "... tcp_server"
+	@echo "... tcp_sub_buffer"
+	@echo "... udp_client"
+	@echo "... udp_server"
+	@echo "... src/buffer.o"
+	@echo "... src/buffer.i"
+	@echo "... src/buffer.s"
+	@echo "... src/tcp_client.o"
+	@echo "... src/tcp_client.i"
+	@echo "... src/tcp_client.s"
+	@echo "... src/tcp_pub_buffer.o"
+	@echo "... src/tcp_pub_buffer.i"
+	@echo "... src/tcp_pub_buffer.s"
+	@echo "... src/tcp_server.o"
+	@echo "... src/tcp_server.i"
+	@echo "... src/tcp_server.s"
+	@echo "... src/tcp_sub_buffer.o"
+	@echo "... src/tcp_sub_buffer.i"
+	@echo "... src/tcp_sub_buffer.s"
+	@echo "... src/udp_client.o"
+	@echo "... src/udp_client.i"
+	@echo "... src/udp_client.s"
+	@echo "... src/udp_server.o"
+	@echo "... src/udp_server.i"
+	@echo "... src/udp_server.s"
 .PHONY : help
 
 
@@ -195,6 +489,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/GitHub/Money_Money/ROS/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/Money_Money/ROS/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

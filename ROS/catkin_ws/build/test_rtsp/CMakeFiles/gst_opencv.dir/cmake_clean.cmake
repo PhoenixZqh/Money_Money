@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/GitHub/Money_Money/ROS/catkin_ws/devel/lib/test_rtsp/gst_opencv"
-  "/home/GitHub/Money_Money/ROS/catkin_ws/devel/lib/test_rtsp/gst_opencv.pdb"
+  "/home/Money_Money/ROS/catkin_ws/devel/lib/test_rtsp/gst_opencv"
+  "/home/Money_Money/ROS/catkin_ws/devel/lib/test_rtsp/gst_opencv.pdb"
   "CMakeFiles/gst_opencv.dir/src/gst_opencv.cpp.o"
   "CMakeFiles/gst_opencv.dir/src/gst_opencv.cpp.o.d"
 )

@@ -1,4 +1,4 @@
-prefix=/home/GitHub/Money_Money/ROS/catkin_ws/devel
+prefix=/home/Money_Money/ROS/catkin_ws/devel
 
 Name: test_rtsp
 Description: Description of test_rtsp

@@ -1,8 +1,8 @@
-# Install script for directory: /home/GitHub/Money_Money/ROS/catkin_ws/src/opencv_learn
+# Install script for directory: /home/Money_Money/ROS/catkin_ws/src/opencv_learn
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/GitHub/Money_Money/ROS/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/Money_Money/ROS/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

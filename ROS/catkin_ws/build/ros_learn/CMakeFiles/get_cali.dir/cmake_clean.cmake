@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/GitHub/Money_Money/ROS/catkin_ws/devel/lib/ros_learn/get_cali"
-  "/home/GitHub/Money_Money/ROS/catkin_ws/devel/lib/ros_learn/get_cali.pdb"
+  "/home/Money_Money/ROS/catkin_ws/devel/lib/ros_learn/get_cali"
+  "/home/Money_Money/ROS/catkin_ws/devel/lib/ros_learn/get_cali.pdb"
   "CMakeFiles/get_cali.dir/src/get_cali.cpp.o"
   "CMakeFiles/get_cali.dir/src/get_cali.cpp.o.d"
 )

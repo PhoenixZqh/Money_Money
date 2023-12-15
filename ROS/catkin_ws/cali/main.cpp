@@ -6,7 +6,7 @@
 using namespace std;
 int main(int argc, char **argv)
 {
-    string dir = "/home/data/PIC5B0/";             // 标定图片所在文件夹
+    string dir = "/home/data-jinshan/pic_no3/";    // 标定图片所在文件夹
     ofstream fout(dir + "calibration_result.txt"); // 输出结果保存在此文本文件下
     // 依次读取每一幅图片，从中提取角点
     cout << "开始提取角点……" << endl;

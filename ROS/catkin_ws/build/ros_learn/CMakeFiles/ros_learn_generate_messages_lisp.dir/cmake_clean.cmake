@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/GitHub/Money_Money/ROS/catkin_ws/devel/share/common-lisp/ros/ros_learn/srv/add.lisp"
+  "/home/Money_Money/ROS/catkin_ws/devel/share/common-lisp/ros/ros_learn/srv/add.lisp"
   "CMakeFiles/ros_learn_generate_messages_lisp"
 )
 

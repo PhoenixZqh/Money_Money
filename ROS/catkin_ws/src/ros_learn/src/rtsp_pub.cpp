@@ -9,17 +9,24 @@
 #include <sys/socket.h>
 #include <unistd.h>
 
-#define HOST "10.88.105.194"
+/**
+ * @brief UDP 发送图片
+*/
+
+#define HOST "127.0.0.1"
 #define PORT 9999
 #define CHUNK_SIZE 4096
 
-void imageCallback(const sensor_msgs::CompressedImageConstPtr& msg)
+void imageCallback(const sensor_msgs::ImageConstPtr &msg)
 {
     cv_bridge::CvImagePtr cvImagePtr;
-    try {
+    try
+    {
         // Convert ROS image message to OpenCV image
         cvImagePtr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
-    } catch (cv_bridge::Exception& e) {
+    }
+    catch (cv_bridge::Exception &e)
+    {
         ROS_ERROR("cv_bridge exception: %s", e.what());
         return;
     }
@@ -27,7 +34,8 @@ void imageCallback(const sensor_msgs::CompressedImageConstPtr& msg)
     // Get the OpenCV image
     cv::Mat frame = cvImagePtr->image;
 
-    std::vector<uchar> buffer;
+    // std::vector<uchar> buffer;
+    std::vector<uint8_t> buffer;
     std::vector<int> encodeParams;
     encodeParams.push_back(cv::IMWRITE_JPEG_QUALITY);
     encodeParams.push_back(55); // 设置较高的压缩质量，例如90
@@ -38,7 +46,8 @@ void imageCallback(const sensor_msgs::CompressedImageConstPtr& msg)
 
     // Create socket
     int serverSocket;
-    if ((serverSocket = socket(AF_INET, SOCK_DGRAM, 0)) < 0) {
+    if ((serverSocket = socket(AF_INET, SOCK_DGRAM, 0)) < 0)
+    {
         perror("Socket creation failed");
         return;
     }
@@ -48,14 +57,16 @@ void imageCallback(const sensor_msgs::CompressedImageConstPtr& msg)
     memset(&serverAddress, 0, sizeof(serverAddress));
     serverAddress.sin_family = AF_INET;
     serverAddress.sin_port = htons(PORT);
-    if (inet_pton(AF_INET, HOST, &serverAddress.sin_addr) <= 0) {
+    if (inet_pton(AF_INET, HOST, &serverAddress.sin_addr) <= 0)
+    {
         perror("Invalid address/ Address not supported");
         close(serverSocket);
         return;
     }
 
     // Connect to server
-    if (connect(serverSocket, (struct sockaddr*)&serverAddress, sizeof(serverAddress)) < 0) {
+    if (connect(serverSocket, (struct sockaddr *)&serverAddress, sizeof(serverAddress)) < 0)
+    {
         perror("Connection failed");
         close(serverSocket);
         return;
@@ -63,7 +74,8 @@ void imageCallback(const sensor_msgs::CompressedImageConstPtr& msg)
 
     // Send the length of encoded frame
     int frameSize = buffer.size();
-    if (send(serverSocket, &frameSize, sizeof(frameSize), 0) < 0) {
+    if (send(serverSocket, &frameSize, sizeof(frameSize), 0) < 0)
+    {
         perror("Failed to send frame size");
         close(serverSocket);
         return;
@@ -71,10 +83,12 @@ void imageCallback(const sensor_msgs::CompressedImageConstPtr& msg)
 
     // Send the encoded frame data in chunks
     size_t totalSent = 0;
-    while (totalSent < buffer.size()) {
+    while (totalSent < buffer.size())
+    {
         size_t remaining = buffer.size() - totalSent;
         size_t toSend = std::min(remaining, static_cast<size_t>(CHUNK_SIZE));
-        if (send(serverSocket, buffer.data() + totalSent, toSend, 0) < 0) {
+        if (send(serverSocket, buffer.data() + totalSent, toSend, 0) < 0)
+        {
             perror("Failed to send frame data");
             close(serverSocket);
             return;
@@ -88,14 +102,14 @@ void imageCallback(const sensor_msgs::CompressedImageConstPtr& msg)
     close(serverSocket);
 }
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     // Initialize ROS node
     ros::init(argc, argv, "image_sender");
     ros::NodeHandle nh;
 
     // Subscribe to the image topic
-    ros::Subscriber sub = nh.subscribe("/image_track_box", 1, imageCallback);
+    ros::Subscriber sub = nh.subscribe("/nhy/gimbal_camera", 1, imageCallback);
 
     ros::spin();
 

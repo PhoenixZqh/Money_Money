@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/GitHub/Money_Money/ROS/catkin_ws/devel/lib/ros_learn/opencv_push_rtsp"
-  "/home/GitHub/Money_Money/ROS/catkin_ws/devel/lib/ros_learn/opencv_push_rtsp.pdb"
+  "/home/Money_Money/ROS/catkin_ws/devel/lib/ros_learn/opencv_push_rtsp"
+  "/home/Money_Money/ROS/catkin_ws/devel/lib/ros_learn/opencv_push_rtsp.pdb"
   "CMakeFiles/opencv_push_rtsp.dir/src/opencv_push_rtsp.cpp.o"
   "CMakeFiles/opencv_push_rtsp.dir/src/opencv_push_rtsp.cpp.o.d"
 )

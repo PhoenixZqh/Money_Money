@@ -1,8 +1,8 @@
-prefix=/home/GitHub/Money_Money/ROS/catkin_ws/devel
+prefix=/home/Money_Money/ROS/catkin_ws/devel
 
 Name: ros_learn
 Description: Description of ros_learn
 Version: 0.0.0
-Cflags: -I/home/GitHub/Money_Money/ROS/catkin_ws/devel/include
+Cflags: -I/home/Money_Money/ROS/catkin_ws/devel/include
 Libs: -L${prefix}/lib 
 Requires: roscpp rospy std_msgs message_runtime

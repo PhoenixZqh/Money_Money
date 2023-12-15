@@ -30,3 +30,13 @@ git tag   //查看所有的标签
 ```
 git push origin --tags    //上传所有的标签
 ```
+
+# 三 删除标签
+
+```xml
+git tag -d <tag-name>  #删除本地标签
+```
+
+```xml
+git push origin :refs/tags/<tag-name>   #删除标签
+```
