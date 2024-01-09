@@ -150,3 +150,9 @@ target_link_libraries(tcp_sub_buffer ${catkin_LIBRARIES} ${OpenCV_LIBS})
 
 add_executable(tcp_pub_buffer src/tcp_pub_buffer.cpp)
 target_link_libraries(tcp_pub_buffer ${catkin_LIBRARIES} ${OpenCV_LIBS})
+
+add_executable(tcp_change_client src/tcp_change_client.cpp)
+target_link_libraries(tcp_change_client ${catkin_LIBRARIES} ${OpenCV_LIBS})
+
+add_executable(tcp_change_server src/tcp_change_server.cpp)
+target_link_libraries(tcp_change_server ${catkin_LIBRARIES} ${OpenCV_LIBS})

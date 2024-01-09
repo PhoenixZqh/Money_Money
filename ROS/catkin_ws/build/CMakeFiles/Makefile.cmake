@@ -374,6 +374,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "socket_learn/CMakeFiles/buffer.dir/DependInfo.cmake"
   "socket_learn/CMakeFiles/tcp_sub_buffer.dir/DependInfo.cmake"
   "socket_learn/CMakeFiles/tcp_pub_buffer.dir/DependInfo.cmake"
+  "socket_learn/CMakeFiles/tcp_change_client.dir/DependInfo.cmake"
+  "socket_learn/CMakeFiles/tcp_change_server.dir/DependInfo.cmake"
   "test_rtsp/CMakeFiles/ffmpeg_cpu.dir/DependInfo.cmake"
   "test_rtsp/CMakeFiles/ffmpeg_opencv_rtsp.dir/DependInfo.cmake"
   "test_rtsp/CMakeFiles/gst_opencv.dir/DependInfo.cmake"

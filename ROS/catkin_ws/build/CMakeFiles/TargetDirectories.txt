@@ -109,6 +109,8 @@
 /home/Money_Money/ROS/catkin_ws/build/socket_learn/CMakeFiles/buffer.dir
 /home/Money_Money/ROS/catkin_ws/build/socket_learn/CMakeFiles/tcp_sub_buffer.dir
 /home/Money_Money/ROS/catkin_ws/build/socket_learn/CMakeFiles/tcp_pub_buffer.dir
+/home/Money_Money/ROS/catkin_ws/build/socket_learn/CMakeFiles/tcp_change_client.dir
+/home/Money_Money/ROS/catkin_ws/build/socket_learn/CMakeFiles/tcp_change_server.dir
 /home/Money_Money/ROS/catkin_ws/build/socket_learn/CMakeFiles/test.dir
 /home/Money_Money/ROS/catkin_ws/build/socket_learn/CMakeFiles/edit_cache.dir
 /home/Money_Money/ROS/catkin_ws/build/socket_learn/CMakeFiles/rebuild_cache.dir

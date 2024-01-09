@@ -1069,6 +1069,32 @@ tcp_pub_buffer/fast:
 .PHONY : tcp_pub_buffer/fast
 
 #=============================================================================
+# Target rules for targets named tcp_change_client
+
+# Build rule for target.
+tcp_change_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tcp_change_client
+.PHONY : tcp_change_client
+
+# fast build rule for target.
+tcp_change_client/fast:
+	$(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_change_client.dir/build.make socket_learn/CMakeFiles/tcp_change_client.dir/build
+.PHONY : tcp_change_client/fast
+
+#=============================================================================
+# Target rules for targets named tcp_change_server
+
+# Build rule for target.
+tcp_change_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tcp_change_server
+.PHONY : tcp_change_server
+
+# fast build rule for target.
+tcp_change_server/fast:
+	$(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_change_server.dir/build.make socket_learn/CMakeFiles/tcp_change_server.dir/build
+.PHONY : tcp_change_server/fast
+
+#=============================================================================
 # Target rules for targets named ffmpeg_cpu
 
 # Build rule for target.
@@ -1185,6 +1211,8 @@ help:
 	@echo "... opencv_push_rtsp"
 	@echo "... rtsp_pub"
 	@echo "... rtsp_sub"
+	@echo "... tcp_change_client"
+	@echo "... tcp_change_server"
 	@echo "... tcp_client"
 	@echo "... tcp_pub_buffer"
 	@echo "... tcp_server"

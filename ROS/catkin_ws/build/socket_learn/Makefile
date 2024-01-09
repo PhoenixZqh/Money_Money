@@ -269,6 +269,34 @@ tcp_pub_buffer/fast:
 	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_pub_buffer.dir/build.make socket_learn/CMakeFiles/tcp_pub_buffer.dir/build
 .PHONY : tcp_pub_buffer/fast
 
+# Convenience name for target.
+socket_learn/CMakeFiles/tcp_change_client.dir/rule:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/tcp_change_client.dir/rule
+.PHONY : socket_learn/CMakeFiles/tcp_change_client.dir/rule
+
+# Convenience name for target.
+tcp_change_client: socket_learn/CMakeFiles/tcp_change_client.dir/rule
+.PHONY : tcp_change_client
+
+# fast build rule for target.
+tcp_change_client/fast:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_change_client.dir/build.make socket_learn/CMakeFiles/tcp_change_client.dir/build
+.PHONY : tcp_change_client/fast
+
+# Convenience name for target.
+socket_learn/CMakeFiles/tcp_change_server.dir/rule:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 socket_learn/CMakeFiles/tcp_change_server.dir/rule
+.PHONY : socket_learn/CMakeFiles/tcp_change_server.dir/rule
+
+# Convenience name for target.
+tcp_change_server: socket_learn/CMakeFiles/tcp_change_server.dir/rule
+.PHONY : tcp_change_server
+
+# fast build rule for target.
+tcp_change_server/fast:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_change_server.dir/build.make socket_learn/CMakeFiles/tcp_change_server.dir/build
+.PHONY : tcp_change_server/fast
+
 src/buffer.o: src/buffer.cpp.o
 .PHONY : src/buffer.o
 
@@ -292,6 +320,54 @@ src/buffer.s: src/buffer.cpp.s
 src/buffer.cpp.s:
 	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/buffer.dir/build.make socket_learn/CMakeFiles/buffer.dir/src/buffer.cpp.s
 .PHONY : src/buffer.cpp.s
+
+src/tcp_change_client.o: src/tcp_change_client.cpp.o
+.PHONY : src/tcp_change_client.o
+
+# target to build an object file
+src/tcp_change_client.cpp.o:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_change_client.dir/build.make socket_learn/CMakeFiles/tcp_change_client.dir/src/tcp_change_client.cpp.o
+.PHONY : src/tcp_change_client.cpp.o
+
+src/tcp_change_client.i: src/tcp_change_client.cpp.i
+.PHONY : src/tcp_change_client.i
+
+# target to preprocess a source file
+src/tcp_change_client.cpp.i:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_change_client.dir/build.make socket_learn/CMakeFiles/tcp_change_client.dir/src/tcp_change_client.cpp.i
+.PHONY : src/tcp_change_client.cpp.i
+
+src/tcp_change_client.s: src/tcp_change_client.cpp.s
+.PHONY : src/tcp_change_client.s
+
+# target to generate assembly for a file
+src/tcp_change_client.cpp.s:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_change_client.dir/build.make socket_learn/CMakeFiles/tcp_change_client.dir/src/tcp_change_client.cpp.s
+.PHONY : src/tcp_change_client.cpp.s
+
+src/tcp_change_server.o: src/tcp_change_server.cpp.o
+.PHONY : src/tcp_change_server.o
+
+# target to build an object file
+src/tcp_change_server.cpp.o:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_change_server.dir/build.make socket_learn/CMakeFiles/tcp_change_server.dir/src/tcp_change_server.cpp.o
+.PHONY : src/tcp_change_server.cpp.o
+
+src/tcp_change_server.i: src/tcp_change_server.cpp.i
+.PHONY : src/tcp_change_server.i
+
+# target to preprocess a source file
+src/tcp_change_server.cpp.i:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_change_server.dir/build.make socket_learn/CMakeFiles/tcp_change_server.dir/src/tcp_change_server.cpp.i
+.PHONY : src/tcp_change_server.cpp.i
+
+src/tcp_change_server.s: src/tcp_change_server.cpp.s
+.PHONY : src/tcp_change_server.s
+
+# target to generate assembly for a file
+src/tcp_change_server.cpp.s:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f socket_learn/CMakeFiles/tcp_change_server.dir/build.make socket_learn/CMakeFiles/tcp_change_server.dir/src/tcp_change_server.cpp.s
+.PHONY : src/tcp_change_server.cpp.s
 
 src/tcp_client.o: src/tcp_client.cpp.o
 .PHONY : src/tcp_client.o
@@ -451,6 +527,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... buffer"
+	@echo "... tcp_change_client"
+	@echo "... tcp_change_server"
 	@echo "... tcp_client"
 	@echo "... tcp_pub_buffer"
 	@echo "... tcp_server"
@@ -460,6 +538,12 @@ help:
 	@echo "... src/buffer.o"
 	@echo "... src/buffer.i"
 	@echo "... src/buffer.s"
+	@echo "... src/tcp_change_client.o"
+	@echo "... src/tcp_change_client.i"
+	@echo "... src/tcp_change_client.s"
+	@echo "... src/tcp_change_server.o"
+	@echo "... src/tcp_change_server.i"
+	@echo "... src/tcp_change_server.s"
 	@echo "... src/tcp_client.o"
 	@echo "... src/tcp_client.i"
 	@echo "... src/tcp_client.s"
