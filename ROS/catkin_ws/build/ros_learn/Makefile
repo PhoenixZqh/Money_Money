@@ -830,6 +830,20 @@ ros_learn_genpy/fast:
 .PHONY : ros_learn_genpy/fast
 
 # Convenience name for target.
+ros_learn/CMakeFiles/test_ros_time.dir/rule:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ros_learn/CMakeFiles/test_ros_time.dir/rule
+.PHONY : ros_learn/CMakeFiles/test_ros_time.dir/rule
+
+# Convenience name for target.
+test_ros_time: ros_learn/CMakeFiles/test_ros_time.dir/rule
+.PHONY : test_ros_time
+
+# fast build rule for target.
+test_ros_time/fast:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_ros_time.dir/build.make ros_learn/CMakeFiles/test_ros_time.dir/build
+.PHONY : test_ros_time/fast
+
+# Convenience name for target.
 ros_learn/CMakeFiles/rtsp_sub.dir/rule:
 	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ros_learn/CMakeFiles/rtsp_sub.dir/rule
 .PHONY : ros_learn/CMakeFiles/rtsp_sub.dir/rule
@@ -1033,6 +1047,30 @@ src/rtsp_sub.cpp.s:
 	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/rtsp_sub.dir/build.make ros_learn/CMakeFiles/rtsp_sub.dir/src/rtsp_sub.cpp.s
 .PHONY : src/rtsp_sub.cpp.s
 
+src/test_ros_time.o: src/test_ros_time.cpp.o
+.PHONY : src/test_ros_time.o
+
+# target to build an object file
+src/test_ros_time.cpp.o:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_ros_time.dir/build.make ros_learn/CMakeFiles/test_ros_time.dir/src/test_ros_time.cpp.o
+.PHONY : src/test_ros_time.cpp.o
+
+src/test_ros_time.i: src/test_ros_time.cpp.i
+.PHONY : src/test_ros_time.i
+
+# target to preprocess a source file
+src/test_ros_time.cpp.i:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_ros_time.dir/build.make ros_learn/CMakeFiles/test_ros_time.dir/src/test_ros_time.cpp.i
+.PHONY : src/test_ros_time.cpp.i
+
+src/test_ros_time.s: src/test_ros_time.cpp.s
+.PHONY : src/test_ros_time.s
+
+# target to generate assembly for a file
+src/test_ros_time.cpp.s:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_ros_time.dir/build.make ros_learn/CMakeFiles/test_ros_time.dir/src/test_ros_time.cpp.s
+.PHONY : src/test_ros_time.cpp.s
+
 src/test_rtsp.o: src/test_rtsp.cpp.o
 .PHONY : src/test_rtsp.o
 
@@ -1122,6 +1160,7 @@ help:
 	@echo "... opencv_push_rtsp"
 	@echo "... rtsp_pub"
 	@echo "... rtsp_sub"
+	@echo "... test_ros_time"
 	@echo "... test_rtsp"
 	@echo "... src/get_cali.o"
 	@echo "... src/get_cali.i"
@@ -1138,6 +1177,9 @@ help:
 	@echo "... src/rtsp_sub.o"
 	@echo "... src/rtsp_sub.i"
 	@echo "... src/rtsp_sub.s"
+	@echo "... src/test_ros_time.o"
+	@echo "... src/test_ros_time.i"
+	@echo "... src/test_ros_time.s"
 	@echo "... src/test_rtsp.o"
 	@echo "... src/test_rtsp.i"
 	@echo "... src/test_rtsp.s"

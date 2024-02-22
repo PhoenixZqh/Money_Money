@@ -102,6 +102,9 @@ link_directories(
 # add_executable(ros_rtsp src/ros_rtsp.cpp)
 # target_link_libraries(ros_rtsp ${catkin_LIBRARIES}) 
 
+add_executable(test_ros_time src/test_ros_time.cpp)
+target_link_libraries(test_ros_time ${catkin_LIBRARIES}) 
+
 add_executable(rtsp_sub src/rtsp_sub.cpp)
 target_link_libraries(rtsp_sub ${catkin_LIBRARIES} ${OpenCV_LIBS}) 
 

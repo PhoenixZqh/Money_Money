@@ -900,6 +900,19 @@ ros_learn_genpy/fast:
 .PHONY : ros_learn_genpy/fast
 
 #=============================================================================
+# Target rules for targets named test_ros_time
+
+# Build rule for target.
+test_ros_time: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_ros_time
+.PHONY : test_ros_time
+
+# fast build rule for target.
+test_ros_time/fast:
+	$(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_ros_time.dir/build.make ros_learn/CMakeFiles/test_ros_time.dir/build
+.PHONY : test_ros_time/fast
+
+#=============================================================================
 # Target rules for targets named rtsp_sub
 
 # Build rule for target.
@@ -1217,6 +1230,7 @@ help:
 	@echo "... tcp_pub_buffer"
 	@echo "... tcp_server"
 	@echo "... tcp_sub_buffer"
+	@echo "... test_ros_time"
 	@echo "... test_rtsp"
 	@echo "... udp_client"
 	@echo "... udp_server"
