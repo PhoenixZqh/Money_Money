@@ -1,15 +1,23 @@
+/*
+ * Author: phoenixZ
+ * Date: 2024-04-28 09:41:13
+ * Description: 
+ ?  lambda表达式是一种匿名函数
+ ?  基本用法： [捕获列表](参数列表){}
+*/
+
 #include <functional>
 #include <iostream>
 #include <memory>
 #include <string>
 #include <vector>
+#include <algorithm>
 
-#define FUNDMENTAL
+#define NONE
 
 #ifdef FUNDMENTAL
 /**
- * @brief  lambda表达式是一种匿名函数
- * 基本用法： [捕获列表](参数列表){}
+ * @brief  基本用法示例
 */
 
 using namespace std;
@@ -59,5 +67,44 @@ int main()
 }
 
 #elif defined(ASARGS)
+
+/**
+ * @brief  lamda 表达式作函数参数
+*/
+
+int Func1(int &a, int &b, std::function<int(int, int)> func)
+{
+    auto res = func(a, b);
+    std::cout << "res: " << res << std::endl;
+    return res;
+}
+
+int main()
+{
+    int a = 20, b = 200;
+
+    Func1(a, b, [&](int c, int d) { return c + d; });
+
+    return 0;
+}
+
+#else
+
+/**
+ * @brief lamda 表达式和STL的结合
+*/
+
+int main()
+{
+    std::vector<int> arr = {3, 2, 21, 454, 213, 53, 6, 343, 2131, 654, 2323, 11, 0};
+    std::sort(arr.begin(), arr.end(), [](int a, int b) { return a > b; });
+
+    for (int i = 0; i < arr.size(); i++)
+    {
+        std::cout << arr[i] << " " << std::endl;
+    }
+
+    return 0;
+}
 
 #endif
