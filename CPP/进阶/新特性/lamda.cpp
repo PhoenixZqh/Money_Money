@@ -1,9 +1,9 @@
 /*
- * Author: phoenixZ
- * Date: 2024-04-28 09:41:13
- * Description: 
- ?  lambda表达式是一种匿名函数
- ?  基本用法： [捕获列表](参数列表){}
+ - Author: phoenixZ
+ - Date: 2024-04-28 09:41:13
+ - Description: 
+ *  lambda表达式是一种匿名函数
+ *  基本用法： [捕获列表](参数列表){}
 */
 
 #include <functional>

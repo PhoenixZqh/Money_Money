@@ -1,0 +1,5 @@
+if(EXISTS "/home/Money_Money/ROS/learn_gtest/build/test1[1]_tests.cmake")
+  include("/home/Money_Money/ROS/learn_gtest/build/test1[1]_tests.cmake")
+else()
+  add_test(test1_NOT_BUILT test1_NOT_BUILT)
+endif()

@@ -1,0 +1,7 @@
+add_test([=[Expected equality of these values:.add(1, 1)]=]  /home/Money_Money/ROS/learn_gtest/build/devel/lib/learn_gtest/demo1 [==[--gtest_filter=Expected equality of these values:.add(1, 1)]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[Expected equality of these values:.add(1, 1)]=]  PROPERTIES WORKING_DIRECTORY /home/Money_Money/ROS/learn_gtest/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[Expected equality of these values:.Which is: 2]=]  /home/Money_Money/ROS/learn_gtest/build/devel/lib/learn_gtest/demo1 [==[--gtest_filter=Expected equality of these values:.Which is: 2]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[Expected equality of these values:.Which is: 2]=]  PROPERTIES WORKING_DIRECTORY /home/Money_Money/ROS/learn_gtest/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[Expected equality of these values:.1]=]  /home/Money_Money/ROS/learn_gtest/build/devel/lib/learn_gtest/demo1 [==[--gtest_filter=Expected equality of these values:.1]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[Expected equality of these values:.1]=]  PROPERTIES WORKING_DIRECTORY /home/Money_Money/ROS/learn_gtest/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  demo1_TESTS [==[Expected equality of these values:.add(1, 1)]==] [==[Expected equality of these values:.Which is: 2]==] [==[Expected equality of these values:.1]==])
