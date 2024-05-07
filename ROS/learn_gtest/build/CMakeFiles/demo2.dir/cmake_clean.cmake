@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/demo2.dir/src/demo2.cpp.o"
   "CMakeFiles/demo2.dir/src/demo2.cpp.o.d"
+  "demo2[1]_tests.cmake"
   "devel/lib/learn_gtest/demo2"
   "devel/lib/learn_gtest/demo2.pdb"
 )

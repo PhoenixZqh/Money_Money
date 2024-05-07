@@ -289,6 +289,19 @@ demo2/fast:
 .PHONY : demo2/fast
 
 #=============================================================================
+# Target rules for targets named demo3
+
+# Build rule for target.
+demo3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo3
+.PHONY : demo3
+
+# fast build rule for target.
+demo3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo3.dir/build.make CMakeFiles/demo3.dir/build
+.PHONY : demo3/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -388,6 +401,30 @@ src/demo2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo2.dir/build.make CMakeFiles/demo2.dir/src/demo2.cpp.s
 .PHONY : src/demo2.cpp.s
 
+src/demo3.o: src/demo3.cpp.o
+.PHONY : src/demo3.o
+
+# target to build an object file
+src/demo3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo3.dir/build.make CMakeFiles/demo3.dir/src/demo3.cpp.o
+.PHONY : src/demo3.cpp.o
+
+src/demo3.i: src/demo3.cpp.i
+.PHONY : src/demo3.i
+
+# target to preprocess a source file
+src/demo3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo3.dir/build.make CMakeFiles/demo3.dir/src/demo3.cpp.i
+.PHONY : src/demo3.cpp.i
+
+src/demo3.s: src/demo3.cpp.s
+.PHONY : src/demo3.s
+
+# target to generate assembly for a file
+src/demo3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo3.dir/build.make CMakeFiles/demo3.dir/src/demo3.cpp.s
+.PHONY : src/demo3.cpp.s
+
 src/test1.o: src/test1.cpp.o
 .PHONY : src/test1.o
 
@@ -433,6 +470,7 @@ help:
 	@echo "... tests"
 	@echo "... demo1"
 	@echo "... demo2"
+	@echo "... demo3"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
@@ -444,6 +482,9 @@ help:
 	@echo "... src/demo2.o"
 	@echo "... src/demo2.i"
 	@echo "... src/demo2.s"
+	@echo "... src/demo3.o"
+	@echo "... src/demo3.i"
+	@echo "... src/demo3.s"
 	@echo "... src/test1.o"
 	@echo "... src/test1.i"
 	@echo "... src/test1.s"

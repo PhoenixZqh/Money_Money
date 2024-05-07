@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 
 /**
- @brief 多组案例测试， 需要对gtest进行初始化
+ @brief 多组案例测试函数， 需要对gtest进行初始化
 */
 
 int Factorial(int n)

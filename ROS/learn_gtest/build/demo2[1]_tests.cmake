@@ -1,0 +1,7 @@
+add_test([=[FactorialTest.Negative]=]  /home/Money_Money/ROS/learn_gtest/build/devel/lib/learn_gtest/demo2 [==[--gtest_filter=FactorialTest.Negative]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[FactorialTest.Negative]=]  PROPERTIES WORKING_DIRECTORY /home/Money_Money/ROS/learn_gtest/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[FactorialTest.Zero]=]  /home/Money_Money/ROS/learn_gtest/build/devel/lib/learn_gtest/demo2 [==[--gtest_filter=FactorialTest.Zero]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[FactorialTest.Zero]=]  PROPERTIES WORKING_DIRECTORY /home/Money_Money/ROS/learn_gtest/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[FactorialTest.Positive]=]  /home/Money_Money/ROS/learn_gtest/build/devel/lib/learn_gtest/demo2 [==[--gtest_filter=FactorialTest.Positive]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[FactorialTest.Positive]=]  PROPERTIES WORKING_DIRECTORY /home/Money_Money/ROS/learn_gtest/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  demo2_TESTS FactorialTest.Negative FactorialTest.Zero FactorialTest.Positive)

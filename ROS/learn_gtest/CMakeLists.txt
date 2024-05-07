@@ -59,7 +59,19 @@ target_link_libraries(
   ${OpenCV_LIBS}
   gtest_main
 )
-# include(GoogleTest)
-# gtest_discover_tests(demo1)
+include(GoogleTest)
+gtest_discover_tests(demo2)
+
+add_executable(
+  demo3
+  src/demo3.cpp
+)
+target_link_libraries(
+  demo3
+  ${OpenCV_LIBS}
+  gtest_main
+)
+include(GoogleTest)
+gtest_discover_tests(demo3)
 
 
