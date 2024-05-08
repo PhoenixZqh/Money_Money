@@ -1,0 +1,5 @@
+add_test([=[ListenersTest.DoesNotLeak]=]  /home/Money_Money/ROS/learn_gtest/build/devel/lib/learn_gtest/demo5 [==[--gtest_filter=ListenersTest.DoesNotLeak]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[ListenersTest.DoesNotLeak]=]  PROPERTIES WORKING_DIRECTORY /home/Money_Money/ROS/learn_gtest/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[ListenersTest.LeaksWater]=]  /home/Money_Money/ROS/learn_gtest/build/devel/lib/learn_gtest/demo5 [==[--gtest_filter=ListenersTest.LeaksWater]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[ListenersTest.LeaksWater]=]  PROPERTIES WORKING_DIRECTORY /home/Money_Money/ROS/learn_gtest/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  demo5_TESTS ListenersTest.DoesNotLeak ListenersTest.LeaksWater)

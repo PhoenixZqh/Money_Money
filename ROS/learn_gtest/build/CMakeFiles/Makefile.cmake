@@ -170,6 +170,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/demo1.dir/DependInfo.cmake"
   "CMakeFiles/demo2.dir/DependInfo.cmake"
   "CMakeFiles/demo3.dir/DependInfo.cmake"
+  "CMakeFiles/demo4.dir/DependInfo.cmake"
+  "CMakeFiles/demo5.dir/DependInfo.cmake"
   "3rd_party/googletest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "3rd_party/googletest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "3rd_party/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"

@@ -8,6 +8,8 @@
 /home/Money_Money/ROS/learn_gtest/build/CMakeFiles/demo1.dir
 /home/Money_Money/ROS/learn_gtest/build/CMakeFiles/demo2.dir
 /home/Money_Money/ROS/learn_gtest/build/CMakeFiles/demo3.dir
+/home/Money_Money/ROS/learn_gtest/build/CMakeFiles/demo4.dir
+/home/Money_Money/ROS/learn_gtest/build/CMakeFiles/demo5.dir
 /home/Money_Money/ROS/learn_gtest/build/CMakeFiles/test.dir
 /home/Money_Money/ROS/learn_gtest/build/CMakeFiles/edit_cache.dir
 /home/Money_Money/ROS/learn_gtest/build/CMakeFiles/rebuild_cache.dir

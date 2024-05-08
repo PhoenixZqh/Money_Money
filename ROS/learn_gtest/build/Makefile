@@ -302,6 +302,32 @@ demo3/fast:
 .PHONY : demo3/fast
 
 #=============================================================================
+# Target rules for targets named demo4
+
+# Build rule for target.
+demo4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo4
+.PHONY : demo4
+
+# fast build rule for target.
+demo4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo4.dir/build.make CMakeFiles/demo4.dir/build
+.PHONY : demo4/fast
+
+#=============================================================================
+# Target rules for targets named demo5
+
+# Build rule for target.
+demo5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo5
+.PHONY : demo5
+
+# fast build rule for target.
+demo5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo5.dir/build.make CMakeFiles/demo5.dir/build
+.PHONY : demo5/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -425,6 +451,54 @@ src/demo3.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo3.dir/build.make CMakeFiles/demo3.dir/src/demo3.cpp.s
 .PHONY : src/demo3.cpp.s
 
+src/demo4.o: src/demo4.cpp.o
+.PHONY : src/demo4.o
+
+# target to build an object file
+src/demo4.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo4.dir/build.make CMakeFiles/demo4.dir/src/demo4.cpp.o
+.PHONY : src/demo4.cpp.o
+
+src/demo4.i: src/demo4.cpp.i
+.PHONY : src/demo4.i
+
+# target to preprocess a source file
+src/demo4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo4.dir/build.make CMakeFiles/demo4.dir/src/demo4.cpp.i
+.PHONY : src/demo4.cpp.i
+
+src/demo4.s: src/demo4.cpp.s
+.PHONY : src/demo4.s
+
+# target to generate assembly for a file
+src/demo4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo4.dir/build.make CMakeFiles/demo4.dir/src/demo4.cpp.s
+.PHONY : src/demo4.cpp.s
+
+src/demo5.o: src/demo5.cpp.o
+.PHONY : src/demo5.o
+
+# target to build an object file
+src/demo5.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo5.dir/build.make CMakeFiles/demo5.dir/src/demo5.cpp.o
+.PHONY : src/demo5.cpp.o
+
+src/demo5.i: src/demo5.cpp.i
+.PHONY : src/demo5.i
+
+# target to preprocess a source file
+src/demo5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo5.dir/build.make CMakeFiles/demo5.dir/src/demo5.cpp.i
+.PHONY : src/demo5.cpp.i
+
+src/demo5.s: src/demo5.cpp.s
+.PHONY : src/demo5.s
+
+# target to generate assembly for a file
+src/demo5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo5.dir/build.make CMakeFiles/demo5.dir/src/demo5.cpp.s
+.PHONY : src/demo5.cpp.s
+
 src/test1.o: src/test1.cpp.o
 .PHONY : src/test1.o
 
@@ -471,6 +545,8 @@ help:
 	@echo "... demo1"
 	@echo "... demo2"
 	@echo "... demo3"
+	@echo "... demo4"
+	@echo "... demo5"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
@@ -485,6 +561,12 @@ help:
 	@echo "... src/demo3.o"
 	@echo "... src/demo3.i"
 	@echo "... src/demo3.s"
+	@echo "... src/demo4.o"
+	@echo "... src/demo4.i"
+	@echo "... src/demo4.s"
+	@echo "... src/demo5.o"
+	@echo "... src/demo5.i"
+	@echo "... src/demo5.s"
 	@echo "... src/test1.o"
 	@echo "... src/test1.i"
 	@echo "... src/test1.s"

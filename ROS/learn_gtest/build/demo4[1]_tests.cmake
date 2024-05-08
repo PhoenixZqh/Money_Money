@@ -1,0 +1,7 @@
+add_test([=[CALCTEST.ADD]=]  /home/Money_Money/ROS/learn_gtest/build/devel/lib/learn_gtest/demo4 [==[--gtest_filter=CALCTEST.ADD]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[CALCTEST.ADD]=]  PROPERTIES WORKING_DIRECTORY /home/Money_Money/ROS/learn_gtest/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[CALCTEST.MINUS]=]  /home/Money_Money/ROS/learn_gtest/build/devel/lib/learn_gtest/demo4 [==[--gtest_filter=CALCTEST.MINUS]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[CALCTEST.MINUS]=]  PROPERTIES WORKING_DIRECTORY /home/Money_Money/ROS/learn_gtest/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[CALCTEST.CHAR]=]  /home/Money_Money/ROS/learn_gtest/build/devel/lib/learn_gtest/demo4 [==[--gtest_filter=CALCTEST.CHAR]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[CALCTEST.CHAR]=]  PROPERTIES WORKING_DIRECTORY /home/Money_Money/ROS/learn_gtest/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  demo4_TESTS CALCTEST.ADD CALCTEST.MINUS CALCTEST.CHAR)
