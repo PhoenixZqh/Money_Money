@@ -89,9 +89,9 @@
 /home/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/ros_learn_gennodejs.dir
 /home/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/ros_learn_generate_messages_py.dir
 /home/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/ros_learn_genpy.dir
-/home/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/test_ros_time.dir
 /home/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/rtsp_sub.dir
 /home/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/rtsp_pub.dir
+/home/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/test_siyuanshu.dir
 /home/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/test_rtsp.dir
 /home/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/gstreamer_rtsp.dir
 /home/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/opencv_push_rtsp.dir
