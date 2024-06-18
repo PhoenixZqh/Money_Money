@@ -1262,4 +1262,11 @@ ros_learn/CMakeFiles/test_rtsp.dir/src/test_rtsp.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /usr/include/c++/9/thread
+ /usr/include/c++/9/thread /opt/ros/noetic/include/cv_bridge/cv_bridge.h \
+ /opt/ros/noetic/include/sensor_msgs/CompressedImage.h \
+ /opt/ros/noetic/include/sensor_msgs/image_encodings.h \
+ /usr/include/opencv4/opencv2/core/core.hpp \
+ /usr/include/opencv4/opencv2/imgproc/imgproc.hpp \
+ /usr/include/opencv4/opencv2/imgproc/types_c.h \
+ /usr/include/opencv4/opencv2/core/core_c.h \
+ /usr/include/opencv4/opencv2/core/types_c.h

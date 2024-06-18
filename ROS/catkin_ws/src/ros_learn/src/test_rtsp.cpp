@@ -11,35 +11,61 @@
 #include <stdlib.h>
 #include <thread> // Add this line to include the <thread> header
 #include <unistd.h>
+#include <cv_bridge/cv_bridge.h>
 
 using namespace std;
 
 ros::Subscriber image_sub;
-FILE* ffmpeg_process;
+FILE *ffmpeg_process;
 mutex buffer_mutex;
 queue<vector<uint8_t>> image_buffer;
 
-void imageCallback(const sensor_msgs::Image::ConstPtr& msg)
+ros::Time t1;
+cv::Mat image;
+
+void imageCallback(const sensor_msgs::Image::ConstPtr &msg)
 {
     // cout << "收到图像" << endl;
 
-    try {
-        // 获取图像数据
-        const std::vector<uint8_t>& image_data = msg->data;
+    t1 = ros::Time::now();
+    string res = std::to_string(t1.toSec());
 
-        // 将图像数据放入缓冲区
+    // std::cout
+    //     << "t1: " << std::to_string(t1.toSec()) << std::endl;
+
+    ros::Time tt1 = msg->header.stamp; // 获取ROS时间戳
+
+    try
+    {
+        // Convert ROS Image message to OpenCV Mat
+        cv_bridge::CvImagePtr cv_ptr;
+        cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
+        image = cv_ptr->image;
+
+        // Draw timestamp on the image
+        stringstream ss;
+        // ss << "ROS Timestamp: " << tt1.sec << "." << setw(9) << setfill('0') << t1.nsec;
+        cv::putText(image, res, cv::Point(100, 100), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(255, 255, 255), 2);
+
+        // Display the image (for testing)
+        // cv::imshow("Image with ROS Timestamp", image);
+        // cv::waitKey(1); // Adjust delay as needed
+
+        // Optional: Push image data into buffer
         lock_guard<mutex> lock(buffer_mutex);
+        vector<uint8_t> image_data(image.data, image.data + image.total() * image.elemSize());
         image_buffer.push(image_data);
-
-    } catch (const std::exception& e) {
-        ROS_ERROR("处理图像数据时出错：%s", e.what());
+    }
+    catch (const std::exception &e)
+    {
+        ROS_ERROR("Exception: %s", e.what());
     }
 }
 
 void processImageBuffer()
 {
-
-    while (ros::ok()) {
+    while (ros::ok())
+    {
         ros::spinOnce();
         ros::Duration(0.01).sleep();
 
@@ -48,17 +74,28 @@ void processImageBuffer()
         lock_guard<mutex> lock(buffer_mutex);
 
         // 检查是否有图像数据
-        if (image_buffer.empty()) {
+        if (image_buffer.empty())
+        {
             continue;
         }
 
         // 获取图像数据
-        const std::vector<uint8_t>& image_data = image_buffer.front();
+        const std::vector<uint8_t> &image_data = image_buffer.front();
 
         // 将图像数据传递给 ffmpeg 的标准输入
         fwrite(image_data.data(), sizeof(uint8_t), image_data.size(), ffmpeg_process);
 
         double end_time = cv::getTickCount();
+        auto t2 = ros::Time::now();
+        string res2 = std::to_string(t2.toSec());
+
+        string res3 = std::to_string((t2 - t1).toSec());
+
+        cv::putText(image, res2, cv::Point(200, 200), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(255, 255, 255), 2);
+        cv::putText(image, "delay: " + res3, cv::Point(500, 500), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(255, 255, 255), 2);
+
+        cv::imshow("Image with ROS Timestamp", image);
+        cv::waitKey(1); // Adjust delay as needed
         // double elapsed_time_ms = (end_time - start_time) / cv::getTickFrequency() * 1000;
         // std::cout << "执行时间：" << elapsed_time_ms << " 毫秒" << std::endl;
 
@@ -70,14 +107,15 @@ void processImageBuffer()
 void sigintHandler(int sig)
 {
     // 关闭 ffmpeg 进程
-    if (ffmpeg_process) {
+    if (ffmpeg_process)
+    {
         fclose(ffmpeg_process);
         ffmpeg_process = nullptr;
     }
     ros::shutdown();
 }
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     ros::init(argc, argv, "image_to_ffmpeg");
 
@@ -90,9 +128,10 @@ int main(int argc, char** argv)
 
     // 启动 ffmpeg 进程并将其标准输入重定向到管道
 
-    ffmpeg_process = popen("ffmpeg -f rawvideo -pixel_format bgr24 -video_size 1280x720 -framerate 30 -i - -c:v h264_nvenc -b:v 1000k -g 10 -preset fast -f rtsp rtsp://10.88.105.194:8554/nhy", "w");
+    ffmpeg_process = popen("ffmpeg -f rawvideo -pixel_format bgr24 -video_size 1280x720 -framerate 30 -i - -c:v h264_nvenc -b:v 1000k -g 10 -preset fast -f rtsp rtsp://172.17.0.3:8554/nhy", "w");
 
-    if (!ffmpeg_process) {
+    if (!ffmpeg_process)
+    {
         ROS_ERROR("无法启动 ffmpeg 进程");
         return 1;
     }
