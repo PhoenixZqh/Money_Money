@@ -373,6 +373,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "ros_learn/CMakeFiles/gstreamer_rtsp.dir/DependInfo.cmake"
   "ros_learn/CMakeFiles/opencv_push_rtsp.dir/DependInfo.cmake"
   "ros_learn/CMakeFiles/get_cali.dir/DependInfo.cmake"
+  "ros_learn/CMakeFiles/test_eigen.dir/DependInfo.cmake"
   "socket_learn/CMakeFiles/udp_server.dir/DependInfo.cmake"
   "socket_learn/CMakeFiles/udp_client.dir/DependInfo.cmake"
   "socket_learn/CMakeFiles/tcp_server.dir/DependInfo.cmake"

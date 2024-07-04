@@ -927,6 +927,20 @@ get_cali/fast:
 	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/get_cali.dir/build.make ros_learn/CMakeFiles/get_cali.dir/build
 .PHONY : get_cali/fast
 
+# Convenience name for target.
+ros_learn/CMakeFiles/test_eigen.dir/rule:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ros_learn/CMakeFiles/test_eigen.dir/rule
+.PHONY : ros_learn/CMakeFiles/test_eigen.dir/rule
+
+# Convenience name for target.
+test_eigen: ros_learn/CMakeFiles/test_eigen.dir/rule
+.PHONY : test_eigen
+
+# fast build rule for target.
+test_eigen/fast:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_eigen.dir/build.make ros_learn/CMakeFiles/test_eigen.dir/build
+.PHONY : test_eigen/fast
+
 src/get_cali.o: src/get_cali.cpp.o
 .PHONY : src/get_cali.o
 
@@ -1047,6 +1061,30 @@ src/rtsp_sub.cpp.s:
 	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/rtsp_sub.dir/build.make ros_learn/CMakeFiles/rtsp_sub.dir/src/rtsp_sub.cpp.s
 .PHONY : src/rtsp_sub.cpp.s
 
+src/test_eigen.o: src/test_eigen.cpp.o
+.PHONY : src/test_eigen.o
+
+# target to build an object file
+src/test_eigen.cpp.o:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_eigen.dir/build.make ros_learn/CMakeFiles/test_eigen.dir/src/test_eigen.cpp.o
+.PHONY : src/test_eigen.cpp.o
+
+src/test_eigen.i: src/test_eigen.cpp.i
+.PHONY : src/test_eigen.i
+
+# target to preprocess a source file
+src/test_eigen.cpp.i:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_eigen.dir/build.make ros_learn/CMakeFiles/test_eigen.dir/src/test_eigen.cpp.i
+.PHONY : src/test_eigen.cpp.i
+
+src/test_eigen.s: src/test_eigen.cpp.s
+.PHONY : src/test_eigen.s
+
+# target to generate assembly for a file
+src/test_eigen.cpp.s:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_eigen.dir/build.make ros_learn/CMakeFiles/test_eigen.dir/src/test_eigen.cpp.s
+.PHONY : src/test_eigen.cpp.s
+
 src/test_rtsp.o: src/test_rtsp.cpp.o
 .PHONY : src/test_rtsp.o
 
@@ -1160,6 +1198,7 @@ help:
 	@echo "... opencv_push_rtsp"
 	@echo "... rtsp_pub"
 	@echo "... rtsp_sub"
+	@echo "... test_eigen"
 	@echo "... test_rtsp"
 	@echo "... test_siyuanshu"
 	@echo "... src/get_cali.o"
@@ -1177,6 +1216,9 @@ help:
 	@echo "... src/rtsp_sub.o"
 	@echo "... src/rtsp_sub.i"
 	@echo "... src/rtsp_sub.s"
+	@echo "... src/test_eigen.o"
+	@echo "... src/test_eigen.i"
+	@echo "... src/test_eigen.s"
 	@echo "... src/test_rtsp.o"
 	@echo "... src/test_rtsp.i"
 	@echo "... src/test_rtsp.s"

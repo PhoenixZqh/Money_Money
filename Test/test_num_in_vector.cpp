@@ -1,4 +1,4 @@
-#include <iostream>
+sudo perf record -g ./your_program#include <iostream>
 #include <algorithm>
 #include <vector>
 

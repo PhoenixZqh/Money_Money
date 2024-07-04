@@ -991,6 +991,19 @@ get_cali/fast:
 .PHONY : get_cali/fast
 
 #=============================================================================
+# Target rules for targets named test_eigen
+
+# Build rule for target.
+test_eigen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_eigen
+.PHONY : test_eigen
+
+# fast build rule for target.
+test_eigen/fast:
+	$(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_eigen.dir/build.make ros_learn/CMakeFiles/test_eigen.dir/build
+.PHONY : test_eigen/fast
+
+#=============================================================================
 # Target rules for targets named udp_server
 
 # Build rule for target.
@@ -1230,6 +1243,7 @@ help:
 	@echo "... tcp_pub_buffer"
 	@echo "... tcp_server"
 	@echo "... tcp_sub_buffer"
+	@echo "... test_eigen"
 	@echo "... test_rtsp"
 	@echo "... test_siyuanshu"
 	@echo "... udp_client"
