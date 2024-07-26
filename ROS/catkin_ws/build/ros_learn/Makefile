@@ -941,6 +941,20 @@ test_eigen/fast:
 	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_eigen.dir/build.make ros_learn/CMakeFiles/test_eigen.dir/build
 .PHONY : test_eigen/fast
 
+# Convenience name for target.
+ros_learn/CMakeFiles/test_cpu.dir/rule:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ros_learn/CMakeFiles/test_cpu.dir/rule
+.PHONY : ros_learn/CMakeFiles/test_cpu.dir/rule
+
+# Convenience name for target.
+test_cpu: ros_learn/CMakeFiles/test_cpu.dir/rule
+.PHONY : test_cpu
+
+# fast build rule for target.
+test_cpu/fast:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_cpu.dir/build.make ros_learn/CMakeFiles/test_cpu.dir/build
+.PHONY : test_cpu/fast
+
 src/get_cali.o: src/get_cali.cpp.o
 .PHONY : src/get_cali.o
 
@@ -1060,6 +1074,30 @@ src/rtsp_sub.s: src/rtsp_sub.cpp.s
 src/rtsp_sub.cpp.s:
 	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/rtsp_sub.dir/build.make ros_learn/CMakeFiles/rtsp_sub.dir/src/rtsp_sub.cpp.s
 .PHONY : src/rtsp_sub.cpp.s
+
+src/test_cpu.o: src/test_cpu.cpp.o
+.PHONY : src/test_cpu.o
+
+# target to build an object file
+src/test_cpu.cpp.o:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_cpu.dir/build.make ros_learn/CMakeFiles/test_cpu.dir/src/test_cpu.cpp.o
+.PHONY : src/test_cpu.cpp.o
+
+src/test_cpu.i: src/test_cpu.cpp.i
+.PHONY : src/test_cpu.i
+
+# target to preprocess a source file
+src/test_cpu.cpp.i:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_cpu.dir/build.make ros_learn/CMakeFiles/test_cpu.dir/src/test_cpu.cpp.i
+.PHONY : src/test_cpu.cpp.i
+
+src/test_cpu.s: src/test_cpu.cpp.s
+.PHONY : src/test_cpu.s
+
+# target to generate assembly for a file
+src/test_cpu.cpp.s:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_cpu.dir/build.make ros_learn/CMakeFiles/test_cpu.dir/src/test_cpu.cpp.s
+.PHONY : src/test_cpu.cpp.s
 
 src/test_eigen.o: src/test_eigen.cpp.o
 .PHONY : src/test_eigen.o
@@ -1198,6 +1236,7 @@ help:
 	@echo "... opencv_push_rtsp"
 	@echo "... rtsp_pub"
 	@echo "... rtsp_sub"
+	@echo "... test_cpu"
 	@echo "... test_eigen"
 	@echo "... test_rtsp"
 	@echo "... test_siyuanshu"
@@ -1216,6 +1255,9 @@ help:
 	@echo "... src/rtsp_sub.o"
 	@echo "... src/rtsp_sub.i"
 	@echo "... src/rtsp_sub.s"
+	@echo "... src/test_cpu.o"
+	@echo "... src/test_cpu.i"
+	@echo "... src/test_cpu.s"
 	@echo "... src/test_eigen.o"
 	@echo "... src/test_eigen.i"
 	@echo "... src/test_eigen.s"

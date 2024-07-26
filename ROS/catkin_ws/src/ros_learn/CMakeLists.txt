@@ -142,3 +142,6 @@ target_link_libraries(get_cali ${catkin_LIBRARIES} ${OpenCV_LIBS} )
 add_executable(test_eigen src/test_eigen.cpp)
 target_link_libraries(test_eigen ${catkin_LIBRARIES} ${OpenCV_LIBS} ) 
 
+add_executable(test_cpu src/test_cpu.cpp)
+target_link_libraries(test_cpu ${catkin_LIBRARIES} pthread ) 
+

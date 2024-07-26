@@ -1004,6 +1004,19 @@ test_eigen/fast:
 .PHONY : test_eigen/fast
 
 #=============================================================================
+# Target rules for targets named test_cpu
+
+# Build rule for target.
+test_cpu: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_cpu
+.PHONY : test_cpu
+
+# fast build rule for target.
+test_cpu/fast:
+	$(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_cpu.dir/build.make ros_learn/CMakeFiles/test_cpu.dir/build
+.PHONY : test_cpu/fast
+
+#=============================================================================
 # Target rules for targets named udp_server
 
 # Build rule for target.
@@ -1243,6 +1256,7 @@ help:
 	@echo "... tcp_pub_buffer"
 	@echo "... tcp_server"
 	@echo "... tcp_sub_buffer"
+	@echo "... test_cpu"
 	@echo "... test_eigen"
 	@echo "... test_rtsp"
 	@echo "... test_siyuanshu"
