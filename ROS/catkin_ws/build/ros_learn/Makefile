@@ -955,6 +955,34 @@ test_cpu/fast:
 	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_cpu.dir/build.make ros_learn/CMakeFiles/test_cpu.dir/build
 .PHONY : test_cpu/fast
 
+# Convenience name for target.
+ros_learn/CMakeFiles/test_ping.dir/rule:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ros_learn/CMakeFiles/test_ping.dir/rule
+.PHONY : ros_learn/CMakeFiles/test_ping.dir/rule
+
+# Convenience name for target.
+test_ping: ros_learn/CMakeFiles/test_ping.dir/rule
+.PHONY : test_ping
+
+# fast build rule for target.
+test_ping/fast:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_ping.dir/build.make ros_learn/CMakeFiles/test_ping.dir/build
+.PHONY : test_ping/fast
+
+# Convenience name for target.
+ros_learn/CMakeFiles/test_daikuan.dir/rule:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ros_learn/CMakeFiles/test_daikuan.dir/rule
+.PHONY : ros_learn/CMakeFiles/test_daikuan.dir/rule
+
+# Convenience name for target.
+test_daikuan: ros_learn/CMakeFiles/test_daikuan.dir/rule
+.PHONY : test_daikuan
+
+# fast build rule for target.
+test_daikuan/fast:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_daikuan.dir/build.make ros_learn/CMakeFiles/test_daikuan.dir/build
+.PHONY : test_daikuan/fast
+
 src/get_cali.o: src/get_cali.cpp.o
 .PHONY : src/get_cali.o
 
@@ -1099,6 +1127,30 @@ src/test_cpu.cpp.s:
 	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_cpu.dir/build.make ros_learn/CMakeFiles/test_cpu.dir/src/test_cpu.cpp.s
 .PHONY : src/test_cpu.cpp.s
 
+src/test_daikuan.o: src/test_daikuan.cpp.o
+.PHONY : src/test_daikuan.o
+
+# target to build an object file
+src/test_daikuan.cpp.o:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_daikuan.dir/build.make ros_learn/CMakeFiles/test_daikuan.dir/src/test_daikuan.cpp.o
+.PHONY : src/test_daikuan.cpp.o
+
+src/test_daikuan.i: src/test_daikuan.cpp.i
+.PHONY : src/test_daikuan.i
+
+# target to preprocess a source file
+src/test_daikuan.cpp.i:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_daikuan.dir/build.make ros_learn/CMakeFiles/test_daikuan.dir/src/test_daikuan.cpp.i
+.PHONY : src/test_daikuan.cpp.i
+
+src/test_daikuan.s: src/test_daikuan.cpp.s
+.PHONY : src/test_daikuan.s
+
+# target to generate assembly for a file
+src/test_daikuan.cpp.s:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_daikuan.dir/build.make ros_learn/CMakeFiles/test_daikuan.dir/src/test_daikuan.cpp.s
+.PHONY : src/test_daikuan.cpp.s
+
 src/test_eigen.o: src/test_eigen.cpp.o
 .PHONY : src/test_eigen.o
 
@@ -1122,6 +1174,30 @@ src/test_eigen.s: src/test_eigen.cpp.s
 src/test_eigen.cpp.s:
 	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_eigen.dir/build.make ros_learn/CMakeFiles/test_eigen.dir/src/test_eigen.cpp.s
 .PHONY : src/test_eigen.cpp.s
+
+src/test_ping.o: src/test_ping.cpp.o
+.PHONY : src/test_ping.o
+
+# target to build an object file
+src/test_ping.cpp.o:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_ping.dir/build.make ros_learn/CMakeFiles/test_ping.dir/src/test_ping.cpp.o
+.PHONY : src/test_ping.cpp.o
+
+src/test_ping.i: src/test_ping.cpp.i
+.PHONY : src/test_ping.i
+
+# target to preprocess a source file
+src/test_ping.cpp.i:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_ping.dir/build.make ros_learn/CMakeFiles/test_ping.dir/src/test_ping.cpp.i
+.PHONY : src/test_ping.cpp.i
+
+src/test_ping.s: src/test_ping.cpp.s
+.PHONY : src/test_ping.s
+
+# target to generate assembly for a file
+src/test_ping.cpp.s:
+	cd /home/Money_Money/ROS/catkin_ws/build && $(MAKE) $(MAKESILENT) -f ros_learn/CMakeFiles/test_ping.dir/build.make ros_learn/CMakeFiles/test_ping.dir/src/test_ping.cpp.s
+.PHONY : src/test_ping.cpp.s
 
 src/test_rtsp.o: src/test_rtsp.cpp.o
 .PHONY : src/test_rtsp.o
@@ -1237,7 +1313,9 @@ help:
 	@echo "... rtsp_pub"
 	@echo "... rtsp_sub"
 	@echo "... test_cpu"
+	@echo "... test_daikuan"
 	@echo "... test_eigen"
+	@echo "... test_ping"
 	@echo "... test_rtsp"
 	@echo "... test_siyuanshu"
 	@echo "... src/get_cali.o"
@@ -1258,9 +1336,15 @@ help:
 	@echo "... src/test_cpu.o"
 	@echo "... src/test_cpu.i"
 	@echo "... src/test_cpu.s"
+	@echo "... src/test_daikuan.o"
+	@echo "... src/test_daikuan.i"
+	@echo "... src/test_daikuan.s"
 	@echo "... src/test_eigen.o"
 	@echo "... src/test_eigen.i"
 	@echo "... src/test_eigen.s"
+	@echo "... src/test_ping.o"
+	@echo "... src/test_ping.i"
+	@echo "... src/test_ping.s"
 	@echo "... src/test_rtsp.o"
 	@echo "... src/test_rtsp.i"
 	@echo "... src/test_rtsp.s"

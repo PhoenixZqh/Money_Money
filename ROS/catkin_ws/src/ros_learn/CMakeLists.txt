@@ -145,3 +145,9 @@ target_link_libraries(test_eigen ${catkin_LIBRARIES} ${OpenCV_LIBS} )
 add_executable(test_cpu src/test_cpu.cpp)
 target_link_libraries(test_cpu ${catkin_LIBRARIES} pthread ) 
 
+add_executable(test_ping src/test_ping.cpp)
+target_link_libraries(test_ping ${catkin_LIBRARIES} ${OpenCV_LIBS} ) 
+
+add_executable(test_daikuan src/test_daikuan.cpp)
+target_link_libraries(test_daikuan ${catkin_LIBRARIES} ${OpenCV_LIBS} ) 
+

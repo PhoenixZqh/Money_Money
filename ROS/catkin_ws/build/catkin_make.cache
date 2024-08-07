@@ -1,2 +1,0 @@
-opencv_learn:ros_learn:socket_learn:test_rtsp
--DCATKIN_DEVEL_PREFIX=/home/Money_Money/ROS/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/Money_Money/ROS/catkin_ws/install -G Unix Makefiles

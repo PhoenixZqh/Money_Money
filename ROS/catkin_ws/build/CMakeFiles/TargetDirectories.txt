@@ -98,6 +98,8 @@
 /home/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/get_cali.dir
 /home/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/test_eigen.dir
 /home/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/test_cpu.dir
+/home/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/test_ping.dir
+/home/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/test_daikuan.dir
 /home/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/test.dir
 /home/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/edit_cache.dir
 /home/Money_Money/ROS/catkin_ws/build/ros_learn/CMakeFiles/rebuild_cache.dir
