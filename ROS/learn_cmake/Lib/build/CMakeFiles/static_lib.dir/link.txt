@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/static_lib.dir/src/main.cpp.o -o static_lib  -Wl,-rpath,/home/GitHub/Money_Money/ROS/learn_cmake/Lib/build libmy_library.so 

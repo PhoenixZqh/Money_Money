@@ -1,8 +1,0 @@
-prefix=/home/Money_Money/ROS/learn_gtest/build/devel
-
-Name: learn_gtest
-Description: Description of learn_gtest
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

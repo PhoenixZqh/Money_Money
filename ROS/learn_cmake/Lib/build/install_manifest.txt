@@ -1,3 +1,0 @@
-/home/GitHub/Money_Money/ROS/learn_cmake/Lib/install/lib/libmy_library.so
-/home/GitHub/Money_Money/ROS/learn_cmake/Lib/install/include/hello.h
-/home/GitHub/Money_Money/ROS/learn_cmake/Lib/install/txt/test.txt

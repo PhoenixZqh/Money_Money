@@ -1,3 +1,0 @@
-/home/GitHub/Money_Money/ROS/learn_cmake/hello_cmake/build/CMakeFiles/hello_cmake.dir
-/home/GitHub/Money_Money/ROS/learn_cmake/hello_cmake/build/CMakeFiles/edit_cache.dir
-/home/GitHub/Money_Money/ROS/learn_cmake/hello_cmake/build/CMakeFiles/rebuild_cache.dir

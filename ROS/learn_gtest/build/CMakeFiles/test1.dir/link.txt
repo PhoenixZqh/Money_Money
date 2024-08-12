@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/test1.dir/src/test1.cpp.o -o devel/lib/learn_gtest/test1  -Wl,-rpath,/home/Money_Money/ROS/learn_gtest/build/lib lib/libgtest_main.so.1.14.0 lib/libgtest.so.1.14.0 -lpthread 
